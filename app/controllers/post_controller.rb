@@ -15,7 +15,7 @@ class PostController < ApplicationController
 
   end
 
-  # CREAR USUARIO
+  # CREAR POST
   def create
 
   	@post=Post.new(params[:post])
