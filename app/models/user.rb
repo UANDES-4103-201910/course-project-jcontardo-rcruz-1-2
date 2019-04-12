@@ -26,4 +26,16 @@ class User < ApplicationRecord
 
  	validates :email, presence: true, format: {with: VALID_EMAIL_REGEX}
 
+ 	before_validation :ensure_login_has_a_value
+ 
+  	private
+  	  def ensure_login_has_a_value
+  	    if login.nil?
+  	      self.login = email unless email.blank?
+  	    end
+  	  end
+
+  	 
+
+
 end
