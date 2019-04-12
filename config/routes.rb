@@ -1,6 +1,13 @@
 Rails.application.routes.draw do
 
 
+  resources :upvotes
+  resources :profiles
+  resources :dumpsters
+  resources :downvotes
+  resources :comments
+  resources :black_lists
+  resources :users
   resource :profile
   resource :black_list
   resource :downvote

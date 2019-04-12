@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Downvotes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>User</th>
+      <th>Post</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @downvotes.each do |downvote| %>
+      <tr>
+        <td><%= downvote.user_id %></td>
+        <td><%= downvote.post_id %></td>
+        <td><%= link_to 'Show', downvote %></td>
+        <td><%= link_to 'Edit', edit_downvote_path(downvote) %></td>
+        <td><%= link_to 'Destroy', downvote, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Downvote', new_downvote_path %>

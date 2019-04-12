@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @dumpster.user_id %>
+</p>
+
+<p>
+  <strong>Post:</strong>
+  <%= @dumpster.post_id %>
+</p>
+
+<%= link_to 'Edit', edit_dumpster_path(@dumpster) %> |
+<%= link_to 'Back', dumpsters_path %>
