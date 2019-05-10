@@ -75,7 +75,7 @@ ActiveRecord::Schema.define(version: 2019_04_12_154214) do
     t.string "email"
     t.integer "phone_number"
     t.string "address"
-    t.string "User_type"
+    t.string "user_type"
     t.string "location"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

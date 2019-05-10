@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ShreksSwamp</title>
+
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+  <!-- nav -->
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="index.html">Shrek's Swamp</a>
+      </div>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="index.html">Logout</a></li>
+        <li><a href="blacklist.html">Black List</a></li>
+        <li><a href="whoareyou.html">Who are you?</a></li>
+
+      </ul>
+    </div>
+  </nav>
+  <!-- ./nav -->
+
+  <!-- main -->
+  <main class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <!-- profile brief -->
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <h3>Lord Farquad</h3>
+            <p>Welcome to my Kingdom</p>
+          </div>
+
+          <div class="media-left">
+            <img src="img/lord.png" class="media-object" style="width: 160px; height: 140px;">
+          </div>     
+
+        </div>
+        <!-- ./profile brief -->
+
+        <!-- friend requests -->
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <h4>Friend requests</h4>
+            <ul>
+              <li>
+                <a href="#">Donkey</a> 
+                <a class="text-success" href="#">[Accept]</a> 
+                <a class="text-danger" href="#">[Decline]</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- ./friend requests -->
+      </div>
+      <div class="col-md-6">
+        <!-- post form -->
+        <form method="post" action="">
+          <div class="input-group">
+            <input class="form-control" type="text" name="content" placeholder="Make a post...">
+            <span class="input-group-btn">
+              <button class="btn btn-success" type="submit" name="post">Post</button>
+            </span>
+          </div>
+        </form><hr>
+        <!-- ./post form -->
+
+        <!-- feed -->
+        <div>
+          <!-- post -->
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <p>First Post</p>
+            </div>
+            <div class="panel-footer">
+              <span>Posted 2017-5-27 20:45:01 by Lord Farquad</span> 
+              <span class="pull-right"><a class="text-danger" href="#">[Delete]</a></span>
+            </div>
+          </div>
+          <!-- ./post -->
+        </div>
+        <!-- ./feed -->
+      </div>
+      <div class="col-md-3">
+      <!-- add friend -->
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <h4>Add Friend</h4>
+            <ul>
+              <li>
+                <a href="#">Pinoccio</a> 
+                <a href="#">[Add]</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- ./add friend -->
+
+        <!-- friends -->
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <h4>Friends</h4>
+            <ul>
+              <li>
+                <a href="#">Shrek</a> 
+                <a class="text-danger" href="#">[Unfriend]</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- ./friends -->
+      </div>
+    </div>
+  </main>
+  <!-- ./main -->
+
+  <!-- footer -->
+  <footer class="container text-center">
+    <ul class="nav nav-pills pull-right">
+      <li>ShreksSwamp - Made by RobertoCruz and JaimeContardo</li>
+    </ul>
+  </footer>
+  <!-- ./footer -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

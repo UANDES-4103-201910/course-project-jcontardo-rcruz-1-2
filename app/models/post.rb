@@ -1,8 +1,8 @@
 class Post < ApplicationRecord
 
-	has_many :comment
-	has_many :upvote
-	has_many :downvote
+	has_many :comments
+	has_many :upvotes
+	has_many :downvotes
 	belongs_to :user
 	belongs_to :black_list
 	belongs_to :dumpster
@@ -15,6 +15,8 @@ class Post < ApplicationRecord
   	# Titulo existente y con un maximo de 50 caracteres
 
   	validates :title, presence: true, length: {in: 0..50}
+
+  	validates :author, presence: true
 
 
 end
