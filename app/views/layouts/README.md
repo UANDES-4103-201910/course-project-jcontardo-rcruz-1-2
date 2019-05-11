@@ -5,3 +5,4 @@ For this delivery, we fix the problems of the previous deliveries, that is, we a
 
 We implement the main views of our program, such as, home, profile, blacklist, who are you.
 
+To run the website, we use html files, not html.erb, therefore opens the file in the browser, not through the local server "localhost".
