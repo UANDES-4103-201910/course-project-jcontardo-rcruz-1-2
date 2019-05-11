@@ -1,2 +1,7 @@
 
-For this assignment, implementamos las vistas de home, perfile, black-list (administrador), y la pagina principal para realizar post
+ASSIGNMENT 2
+
+For this delivery, we fix the problems of the previous deliveries, that is, we add all the missing associations in the models (has_many, belongs_to, has_one, etc.), we also add the missing validations for each of the classes. Change the entity User_type to user_type.
+
+We implement the main views of our program, such as, home, profile, blacklist, who are you.
+
