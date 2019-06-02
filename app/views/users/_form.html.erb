@@ -1,3 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ShreksSwamp</title>
+
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+
 <%= form_with(model: user, local: true) do |form| %>
   <% if user.errors.any? %>
     <div id="error_explanation">
@@ -16,9 +26,12 @@
     <%= form.text_field :name %>
   </div>
 
-  <div class="field">
-    <%= form.label :password %>
-    <%= form.text_field :password %>
+  <div class="form-group">
+      <%= form.label :password, "Password" %>
+      <% if @minimum_password_length %>
+          <em>(<%= @minimum_password_length %> caracteres mínimo)</em>
+      <% end %><br/>
+      <%= form.password_field :password, autocomplete: "off" %>
   </div>
 
   <div class="field">
@@ -40,10 +53,18 @@
     <%= form.label :User_type %>
     <%= form.text_field :User_type %>
   </div>
-
+  <div class="form-group">
+    <%= form.label :image %>
+    <%= form.file_field :image, id: :user_image, direct_upload: true %>
+  </div>
   <div class="field">
     <%= form.label :location %>
     <%= form.text_field :location %>
+  </div>
+
+  <div class="form-group">
+    <%= form.label :image %>
+    <%= form.file_field :image, id: :user_image, direct_upload: true %>
   </div>
 
   <div class="actions">
