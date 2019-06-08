@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Lab11 CONTARDO CRUZ</title>
+    <title>COURSE PROJECT</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -11,10 +11,15 @@
   <body>
       <nav class="navbar navbar-default" style="background-color:#75b0ec;">
       <div class="container-fluid">
-
-        <div class="nav navbar-nav">
+        <div class="navbar-header">
+          <h2 class="navbar-brand">SHREK SWAMP</h2>
+        </div>
+        <ul class="nav navbar-nav ">
 
           <button style="background-color:#75b0ec;border-style:none;"></button>
+           <button><%= link_to 'Home', root_path %></button>
+
+          <button><%= link_to 'Profile', root_path %></button>
 
 
           <div>
@@ -23,14 +28,50 @@
           <div>
             <p class="alert"><%= alert %></p>
           </div>
-        </div>
+
+
+          <% if !user_signed_in? %>
+            <button>
+              <%= link_to new_user_registration_path do %>
+                <span class="glyphicon glyphicon-user"></span>
+                Sign Up
+              <% end %>
+            </button>
+            <button>
+              <%= link_to new_user_session_path do %>
+                <span class="glyphicon glyphicon-log-in"></span>
+                Login
+              <% end %>
+            </button>
+          <% else %>
+            <li>
+              <%= link_to current_user do %>
+                <span class="glyphicon glyphicon-user"></span>
+                Profile
+              <% end %>
+            </li>
+            <li>
+              <%= link_to destroy_user_session_path, method: :delete do %>
+                <span class="glyphicon glyphicon-log-out"></span>
+                Logout
+              <% end %>
+            </li>
+          <% end %>
+        </ul>
       </div>
     </nav>
 
+  <div class="alert alert-info" id="ajax_notice" hidden>
+  </div>
+  <div class="container">
+    <%= yield %>
+  </div>
 
 
 
     
-    <%= yield %>
+
   </body>
+
+
 </html>

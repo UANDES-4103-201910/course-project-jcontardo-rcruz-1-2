@@ -1,8 +1,8 @@
 class User < ApplicationRecord
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
-  devise :database_authenticatable, :registerable,
-         :recoverable, :rememberable, :validatable
+	devise :database_authenticatable, :registerable,
+				 :recoverable, :rememberable, :trackable, :validatable
 	has_one :black_list
 	has_one :profile
 	has_one :dumpster
@@ -17,20 +17,17 @@ class User < ApplicationRecord
 
 	  # Numero de telefono entre 9 y 12 digitos
 
-  	validates :phone_number,presence: true, length: {in: 9..12}
 
-  	validates :name, presence: true
 
 
   # Password entre 8 y 12 digitos alfanumericos
 
-  	validates :password,presence: true, length: {in: 8..12}
+		validates :email, format: {with: /\A.+@.+\..+\z/}
+		validates :encrypted_password, length: { minimum: 8 }
 
   
   # Email formato correcto
-  	VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-]+(\.[a-z]+)*\.[a-z]+\z/i
 
-  	validates :email, presence: true, format: {with: VALID_EMAIL_REGEX}
 
 
 #  	def self.from_omniauth(auth)
@@ -44,10 +41,11 @@ class User < ApplicationRecord
 #	end
 
 	def self.from_omniauth(auth)
-		puts auth.extra.id_info.inspect
-    	where(email: auth.extra.id_info.email).first_or_initialize.tap do |user|
-	      user.email = auth.extra.id_info.email
-	      user.save!
+		where(provider: auth.provider, uid: auth.uid).first_or_create do |user|
+			user.provider = auth.provider
+			user.email = auth.info.email
+			user.name = auth.info.name
+			user.password = Devise.friendly_token[0,20]
 	    end
     end
 end
