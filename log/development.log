@@ -1114,3 +1114,624 @@ Processing by DefaultController#index as HTML
 Completed 200 OK in 106ms (Views: 104.3ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for ::1 at 2019-06-09 11:50:16 -0400
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/jaimecontardo/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by DefaultController#index as HTML
+  Rendering default/index.html.erb within layouts/application
+  Rendered default/index.html.erb within layouts/application (12.5ms)
+Completed 200 OK in 2610ms (Views: 2590.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-06-09 11:50:55 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.9ms)
+  Rendered devise/shared/_links.html.erb (1.3ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (265.2ms)
+Completed 200 OK in 384ms (Views: 358.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-06-09 11:50:59 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (19.5ms)
+Completed 200 OK in 69ms (Views: 66.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/google_oauth2" for ::1 at 2019-06-09 11:51:02 -0400
+(google_oauth2) Request phase initiated.
+Started GET "/auth/google_oauth2" for ::1 at 2019-06-09 11:51:03 -0400
+(google_oauth2) Request phase initiated.
+Started GET "/auth/google_oauth2/callback?state=fd4d212f543de693753bd6994b31a9f4c496e17c2d129b71&code=4/ZAEn-rf0HloYaO0s9SeLq17y0caLyu8OUKBeO2i4xT-3g7IIKdo06J1xerhjI-BaGTYY4_VtUtSPVnDasoxd5yk&scope=email%20profile%20https://www.googleapis.com/auth/userinfo.email%20https://www.googleapis.com/auth/userinfo.profile" for ::1 at 2019-06-09 11:51:09 -0400
+(google_oauth2) Callback phase initiated.
+Processing by SessionsController#create as HTML
+  Parameters: {"state"=>"fd4d212f543de693753bd6994b31a9f4c496e17c2d129b71", "code"=>"4/ZAEn-rf0HloYaO0s9SeLq17y0caLyu8OUKBeO2i4xT-3g7IIKdo06J1xerhjI-BaGTYY4_VtUtSPVnDasoxd5yk", "scope"=>"email profile https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile", "provider"=>"google_oauth2"}
+  Rendering sessions/create.html.erb within layouts/application
+  Rendered sessions/create.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 48ms (Views: 44.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-06-09 11:54:06 -0400
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/jaimecontardo/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by DefaultController#index as HTML
+  Rendering default/index.html.erb within layouts/application
+  Rendered default/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 333ms (Views: 323.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2019-06-09 11:54:07 -0400
+Processing by DefaultController#index as HTML
+  Rendering default/index.html.erb within layouts/application
+  Rendered default/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 62ms (Views: 59.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-06-09 11:54:12 -0400
+Processing by DefaultController#index as HTML
+  Rendering default/index.html.erb within layouts/application
+  Rendered default/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 159ms (Views: 155.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-06-09 11:54:12 -0400
+Processing by DefaultController#index as HTML
+  Rendering default/index.html.erb within layouts/application
+  Rendered default/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 62ms (Views: 58.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-06-09 11:54:17 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (16.1ms)
+Completed 200 OK in 103ms (Views: 79.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/auth/google_oauth2" for ::1 at 2019-06-09 11:54:19 -0400
+(google_oauth2) Request phase initiated.
+Started GET "/auth/google_oauth2" for ::1 at 2019-06-09 11:54:19 -0400
+(google_oauth2) Request phase initiated.
+Started GET "/auth/google_oauth2/callback?state=97975bc2a1f00b770f4c057058e73e0d02d214cf2bb41a0e&code=4/ZAGLRyqbP0z520m2g09GyoarMEWJpKs5ZFIArvw-UTq_xRUEUFCHpEg0LHSUS1kKd1jORVO2VU00CwNlCahBegc&scope=email%20profile%20https://www.googleapis.com/auth/userinfo.email%20https://www.googleapis.com/auth/userinfo.profile" for ::1 at 2019-06-09 11:54:24 -0400
+(google_oauth2) Callback phase initiated.
+Processing by SessionsController#create as HTML
+  Parameters: {"state"=>"97975bc2a1f00b770f4c057058e73e0d02d214cf2bb41a0e", "code"=>"4/ZAGLRyqbP0z520m2g09GyoarMEWJpKs5ZFIArvw-UTq_xRUEUFCHpEg0LHSUS1kKd1jORVO2VU00CwNlCahBegc", "scope"=>"email profile https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile", "provider"=>"google_oauth2"}
+  Rendering sessions/create.html.erb within layouts/application
+  Rendered sessions/create.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 49ms (Views: 45.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-06-09 11:55:46 -0400
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/jaimecontardo/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (16.8ms)
+Completed 200 OK in 384ms (Views: 355.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/auth/google_oauth2" for ::1 at 2019-06-09 11:55:49 -0400
+(google_oauth2) Request phase initiated.
+Started GET "/auth/google_oauth2" for ::1 at 2019-06-09 11:55:49 -0400
+(google_oauth2) Request phase initiated.
+Started GET "/auth/google_oauth2/callback?state=41315e13047fd8022c5bd31eb9b98f53925d44dabda9226c&code=4/ZAEMb4HoFPyedjgnEdsWs7aOfVUoDMjlDq64pl9E4bZhuPfyDUbSDAJJEziJxmduEr4iW_ETn1SWUwq9-qzJNeQ&scope=email%20profile%20https://www.googleapis.com/auth/userinfo.email%20https://www.googleapis.com/auth/userinfo.profile" for ::1 at 2019-06-09 11:55:53 -0400
+(google_oauth2) Callback phase initiated.
+Processing by SessionsController#create as HTML
+  Parameters: {"state"=>"41315e13047fd8022c5bd31eb9b98f53925d44dabda9226c", "code"=>"4/ZAEMb4HoFPyedjgnEdsWs7aOfVUoDMjlDq64pl9E4bZhuPfyDUbSDAJJEziJxmduEr4iW_ETn1SWUwq9-qzJNeQ", "scope"=>"email profile https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile", "provider"=>"google_oauth2"}
+  Rendering sessions/create.html.erb within layouts/application
+  Rendered sessions/create.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 48ms (Views: 45.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-06-09 11:56:01 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 53ms (Views: 51.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/google_oauth2" for ::1 at 2019-06-09 11:56:03 -0400
+(google_oauth2) Request phase initiated.
+Started GET "/auth/google_oauth2" for ::1 at 2019-06-09 11:56:03 -0400
+(google_oauth2) Request phase initiated.
+Started GET "/auth/google_oauth2/callback?state=af12ca7dafef75f6cf8d4f665749d942d58cb32658f9ae5a&code=4/ZAHeC56kzy2ZuD8tP8TTMtc6fQ_l39KRCQu7sgG6RgtGq593LTeibKy8IiDlgWEcl7_qv9gI_Xx63EHKk_qoO1k&scope=email%20profile%20https://www.googleapis.com/auth/userinfo.email%20https://www.googleapis.com/auth/userinfo.profile" for ::1 at 2019-06-09 11:56:06 -0400
+(google_oauth2) Callback phase initiated.
+Processing by SessionsController#create as HTML
+  Parameters: {"state"=>"af12ca7dafef75f6cf8d4f665749d942d58cb32658f9ae5a", "code"=>"4/ZAHeC56kzy2ZuD8tP8TTMtc6fQ_l39KRCQu7sgG6RgtGq593LTeibKy8IiDlgWEcl7_qv9gI_Xx63EHKk_qoO1k", "scope"=>"email profile https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile", "provider"=>"google_oauth2"}
+  Rendering sessions/create.html.erb within layouts/application
+  Rendered sessions/create.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 59ms (Views: 56.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-06-09 11:57:48 -0400
+Processing by DefaultController#index as HTML
+  Rendering default/index.html.erb within layouts/application
+  Rendered default/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 47ms (Views: 43.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-06-09 11:57:51 -0400
+Processing by DefaultController#index as HTML
+  Rendering default/index.html.erb within layouts/application
+  Rendered default/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 47ms (Views: 43.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-06-09 11:57:53 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.6ms)
+  Rendered devise/shared/_links.html.erb (1.7ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 74ms (Views: 72.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-06-09 11:57:57 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 57ms (Views: 54.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/auth/google_oauth2" for ::1 at 2019-06-09 11:58:00 -0400
+(google_oauth2) Request phase initiated.
+Started GET "/auth/google_oauth2" for ::1 at 2019-06-09 11:58:00 -0400
+(google_oauth2) Request phase initiated.
+Started GET "/auth/google_oauth2/callback?state=e3c465fb6be03da3ff87511c0b746ab1c82855f15992a68a&code=4/ZAHKzEfgW2aAFxPEI2Wbr9SyKi5WfO7HlLQvecUNj5UojCMrAPPDFpOFmbNj2ViU7759RN0RRCMMGJ39Jj-xGXg&scope=email%20profile%20https://www.googleapis.com/auth/userinfo.profile%20https://www.googleapis.com/auth/userinfo.email" for ::1 at 2019-06-09 11:58:06 -0400
+(google_oauth2) Callback phase initiated.
+Processing by SessionsController#create as HTML
+  Parameters: {"state"=>"e3c465fb6be03da3ff87511c0b746ab1c82855f15992a68a", "code"=>"4/ZAHKzEfgW2aAFxPEI2Wbr9SyKi5WfO7HlLQvecUNj5UojCMrAPPDFpOFmbNj2ViU7759RN0RRCMMGJ39Jj-xGXg", "scope"=>"email profile https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/userinfo.email", "provider"=>"google_oauth2"}
+  Rendering sessions/create.html.erb within layouts/application
+  Rendered sessions/create.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 56ms (Views: 52.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-06-09 12:02:16 -0400
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/jaimecontardo/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by DefaultController#index as HTML
+  Rendering default/index.html.erb within layouts/application
+  Rendered default/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 341ms (Views: 331.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-06-09 12:02:18 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (16.2ms)
+Completed 200 OK in 88ms (Views: 64.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/auth/google_oauth2" for ::1 at 2019-06-09 12:02:20 -0400
+(google_oauth2) Request phase initiated.
+Started GET "/auth/google_oauth2" for ::1 at 2019-06-09 12:02:20 -0400
+(google_oauth2) Request phase initiated.
+Started GET "/auth/google_oauth2/callback?state=4b880d2b7bcff1639e9836ea0325554d9c97a506687e2c53&code=4/ZAERwqnyNm7djhurgeyVc7d4rX_SL-jmUa4eeIq8h31I-AhsewfvY1X4RIPSAbxFUxINyrrc63MjXjMiBp37zLM&scope=email%20profile%20https://www.googleapis.com/auth/userinfo.email%20https://www.googleapis.com/auth/userinfo.profile" for ::1 at 2019-06-09 12:02:24 -0400
+(google_oauth2) Callback phase initiated.
+Processing by SessionsController#create as HTML
+  Parameters: {"state"=>"4b880d2b7bcff1639e9836ea0325554d9c97a506687e2c53", "code"=>"4/ZAERwqnyNm7djhurgeyVc7d4rX_SL-jmUa4eeIq8h31I-AhsewfvY1X4RIPSAbxFUxINyrrc63MjXjMiBp37zLM", "scope"=>"email profile https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile", "provider"=>"google_oauth2"}
+Completed 500 Internal Server Error in 185ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `env' for #<SessionsController:0x00007fcf5d1f6420>
+Did you mean?  end
+               END):
+  
+app/controllers/sessions_controller.rb:3:in `create'
+Started POST "/__web_console/repl_sessions/a82418b24d91b1ca41cae29833240c62/trace" for ::1 at 2019-06-09 12:03:00 -0400
+Started GET "/" for ::1 at 2019-06-09 12:04:17 -0400
+Started GET "/" for ::1 at 2019-06-09 12:04:17 -0400
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/jaimecontardo/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  ↳ /Users/jaimecontardo/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by DefaultController#index as HTML
+Processing by DefaultController#index as HTML
+  Rendering default/index.html.erb within layouts/application
+  Rendering default/index.html.erb within layouts/application
+  Rendered default/index.html.erb within layouts/application (1.3ms)
+  Rendered default/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 570ms (Views: 556.4ms | ActiveRecord: 0.5ms)
+
+
+Completed 200 OK in 562ms (Views: 559.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-06-09 12:04:19 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (14.8ms)
+Completed 200 OK in 92ms (Views: 65.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/auth/google_oauth2" for ::1 at 2019-06-09 12:04:21 -0400
+(google_oauth2) Request phase initiated.
+Started GET "/auth/google_oauth2" for ::1 at 2019-06-09 12:04:21 -0400
+(google_oauth2) Request phase initiated.
+Started GET "/auth/google_oauth2/callback?state=8433203bbcaf96557032db4a3912d24a002fb20142ea7e0a&code=4/ZAFmL_Sn820PHaghrtHYvUE40CAm6_XpmSjq9klLWg9wuitM3hQXSOFmcwEvrRPHgXeXhIMVGFHRe45PioLHSQk&scope=email%20profile%20https://www.googleapis.com/auth/userinfo.email%20https://www.googleapis.com/auth/userinfo.profile" for ::1 at 2019-06-09 12:04:26 -0400
+(google_oauth2) Callback phase initiated.
+Processing by SessionsController#create as HTML
+  Parameters: {"state"=>"8433203bbcaf96557032db4a3912d24a002fb20142ea7e0a", "code"=>"4/ZAFmL_Sn820PHaghrtHYvUE40CAm6_XpmSjq9klLWg9wuitM3hQXSOFmcwEvrRPHgXeXhIMVGFHRe45PioLHSQk", "scope"=>"email profile https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile", "provider"=>"google_oauth2"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."provider" = ? AND "users"."uid" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["provider", "google_oauth2"], ["uid", "116971971835348623652"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:8
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.8ms)
+
+
+  
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such column: users.provider: SELECT  "users".* FROM "users" WHERE "users"."provider" = ? AND "users"."uid" = ? ORDER BY "users"."id" ASC LIMIT ?):
+  
+app/models/user.rb:8:in `from_omniauth'
+app/controllers/sessions_controller.rb:3:in `create'
+Started GET "/users/sign_in" for ::1 at 2019-06-09 12:05:03 -0400
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/jaimecontardo/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (19.6ms)
+Completed 200 OK in 466ms (Views: 436.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/auth/google_oauth2" for ::1 at 2019-06-09 12:05:05 -0400
+(google_oauth2) Request phase initiated.
+Started GET "/auth/google_oauth2" for ::1 at 2019-06-09 12:05:06 -0400
+(google_oauth2) Request phase initiated.
+Started GET "/auth/google_oauth2/callback?state=c41b4258e66cda15d70a5fe5fa0514a359e9850a70aaf669&code=4/ZAFYR8CyptheCIXFeEqKsIn8Jnh45_OG2DUZid6FHrhYU7PRDwNPG8FKv_WnBY3O7Id9SkiMJgYcy22JL9aGwqY&scope=email%20profile%20https://www.googleapis.com/auth/userinfo.profile%20https://www.googleapis.com/auth/userinfo.email" for ::1 at 2019-06-09 12:05:09 -0400
+(google_oauth2) Callback phase initiated.
+Processing by SessionsController#create as HTML
+  Parameters: {"state"=>"c41b4258e66cda15d70a5fe5fa0514a359e9850a70aaf669", "code"=>"4/ZAFYR8CyptheCIXFeEqKsIn8Jnh45_OG2DUZid6FHrhYU7PRDwNPG8FKv_WnBY3O7Id9SkiMJgYcy22JL9aGwqY", "scope"=>"email profile https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/userinfo.email", "provider"=>"google_oauth2"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."provider" = ? AND "users"."uid" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["provider", "google_oauth2"], ["uid", "116971971835348623652"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:9
+Completed 500 Internal Server Error in 49ms (ActiveRecord: 0.7ms)
+
+
+  
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such column: users.provider: SELECT  "users".* FROM "users" WHERE "users"."provider" = ? AND "users"."uid" = ? ORDER BY "users"."id" ASC LIMIT ?):
+  
+app/models/user.rb:9:in `from_omniauth'
+app/controllers/sessions_controller.rb:3:in `create'
+Started GET "/auth/google_oauth2/callback?state=c41b4258e66cda15d70a5fe5fa0514a359e9850a70aaf669&code=4/ZAHscXvlJbukQ_p-Cgk6oG4Thrpn8sJkVkyTQxHr5Rcl6RdfAAL1YIOXXAp75A6EViQD4dwux_OYCzvdrxTrFng&scope=email%20profile%20https://www.googleapis.com/auth/userinfo.profile%20https://www.googleapis.com/auth/userinfo.email" for ::1 at 2019-06-09 12:06:29 -0400
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/jaimecontardo/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+(google_oauth2) Callback phase initiated.
+Processing by SessionsController#create as HTML
+  Parameters: {"state"=>"c41b4258e66cda15d70a5fe5fa0514a359e9850a70aaf669", "code"=>"4/ZAHscXvlJbukQ_p-Cgk6oG4Thrpn8sJkVkyTQxHr5Rcl6RdfAAL1YIOXXAp75A6EViQD4dwux_OYCzvdrxTrFng", "scope"=>"email profile https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/userinfo.email", "provider"=>"google_oauth2"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."provider" = ? AND "users"."uid" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["provider", "google_oauth2"], ["uid", "116971971835348623652"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:9
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 1.5ms)
+
+
+  
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such column: users.provider: SELECT  "users".* FROM "users" WHERE "users"."provider" = ? AND "users"."uid" = ? ORDER BY "users"."id" ASC LIMIT ?):
+  
+app/models/user.rb:9:in `from_omniauth'
+app/controllers/sessions_controller.rb:3:in `create'
+Started GET "/auth/google_oauth2" for ::1 at 2019-06-09 12:06:59 -0400
+Started GET "/" for ::1 at 2019-06-09 12:06:59 -0400
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/jaimecontardo/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+(google_oauth2) Request phase initiated.
+  ↳ /Users/jaimecontardo/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by DefaultController#index as HTML
+  Rendering default/index.html.erb within layouts/application
+  Rendered default/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 335ms (Views: 330.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2019-06-09 12:07:01 -0400
+Processing by DefaultController#index as HTML
+  Rendering default/index.html.erb within layouts/application
+  Rendered default/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 50ms (Views: 47.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-06-09 12:07:03 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (15.7ms)
+Completed 200 OK in 99ms (Views: 73.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/auth/google_oauth2" for ::1 at 2019-06-09 12:07:04 -0400
+(google_oauth2) Request phase initiated.
+Started GET "/auth/google_oauth2/callback?state=7c2abe7fa16764688024b89be748c26de1b5fc5a539ee15f&code=4/ZAFyFsSkuFDOBhQMFh-bqLlizjrq2wqkJ1n4liTCXT7ZxVAs-dx4cL0ZnuF5NAwWhdc2tQqxFZHrKiJHaWb0-Ag&scope=email%20profile%20https://www.googleapis.com/auth/userinfo.email%20https://www.googleapis.com/auth/userinfo.profile" for ::1 at 2019-06-09 12:07:07 -0400
+(google_oauth2) Callback phase initiated.
+Processing by SessionsController#create as HTML
+  Parameters: {"state"=>"7c2abe7fa16764688024b89be748c26de1b5fc5a539ee15f", "code"=>"4/ZAFyFsSkuFDOBhQMFh-bqLlizjrq2wqkJ1n4liTCXT7ZxVAs-dx4cL0ZnuF5NAwWhdc2tQqxFZHrKiJHaWb0-Ag", "scope"=>"email profile https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile", "provider"=>"google_oauth2"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."provider" = ? AND "users"."uid" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["provider", "google_oauth2"], ["uid", "116971971835348623652"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:9
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.7ms)
+
+
+  
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such column: users.provider: SELECT  "users".* FROM "users" WHERE "users"."provider" = ? AND "users"."uid" = ? ORDER BY "users"."id" ASC LIMIT ?):
+  
+app/models/user.rb:9:in `from_omniauth'
+app/controllers/sessions_controller.rb:3:in `create'
+Started GET "/" for ::1 at 2019-06-09 12:08:06 -0400
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/jaimecontardo/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by DefaultController#index as HTML
+  Rendering default/index.html.erb within layouts/application
+  Rendered default/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 351ms (Views: 340.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2019-06-09 12:08:07 -0400
+Processing by DefaultController#index as HTML
+  Rendering default/index.html.erb within layouts/application
+  Rendered default/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 61ms (Views: 58.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-06-09 12:08:10 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (16.3ms)
+Completed 200 OK in 86ms (Views: 62.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/auth/google_oauth2" for ::1 at 2019-06-09 12:08:11 -0400
+(google_oauth2) Request phase initiated.
+Started GET "/auth/google_oauth2" for ::1 at 2019-06-09 12:08:11 -0400
+(google_oauth2) Request phase initiated.
+Started GET "/auth/google_oauth2/callback?state=7e7a32285d9de2c1172a5aa3ed3645fc7742cf2c63148194&code=4/ZAEycEMEMwusArjplp6KGCN1yt-Es9XtAIXMWUpV2CFOHgtAAS9t7j6WTQEH6E9jCI6ICJo5-R-0Ifl1uh4w7zk&scope=email%20profile%20https://www.googleapis.com/auth/userinfo.email%20https://www.googleapis.com/auth/userinfo.profile" for ::1 at 2019-06-09 12:08:14 -0400
+(google_oauth2) Callback phase initiated.
+Processing by SessionsController#create as HTML
+  Parameters: {"state"=>"7e7a32285d9de2c1172a5aa3ed3645fc7742cf2c63148194", "code"=>"4/ZAEycEMEMwusArjplp6KGCN1yt-Es9XtAIXMWUpV2CFOHgtAAS9t7j6WTQEH6E9jCI6ICJo5-R-0Ifl1uh4w7zk", "scope"=>"email profile https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile", "provider"=>"google_oauth2"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."provider" = ? AND "users"."uid" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["provider", "google_oauth2"], ["uid", "116971971835348623652"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:9
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.8ms)
+
+
+  
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such column: users.provider: SELECT  "users".* FROM "users" WHERE "users"."provider" = ? AND "users"."uid" = ? ORDER BY "users"."id" ASC LIMIT ?):
+  
+app/models/user.rb:9:in `from_omniauth'
+app/controllers/sessions_controller.rb:3:in `create'
+Started GET "/" for ::1 at 2019-06-09 12:09:55 -0400
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/jaimecontardo/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by DefaultController#index as HTML
+  Rendering default/index.html.erb within layouts/application
+  Rendered default/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 319ms (Views: 309.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2019-06-09 12:09:57 -0400
+Processing by DefaultController#index as HTML
+  Rendering default/index.html.erb within layouts/application
+  Rendered default/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 56ms (Views: 52.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-06-09 12:09:58 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 94ms (Views: 68.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/auth/google_oauth2" for ::1 at 2019-06-09 12:09:59 -0400
+(google_oauth2) Request phase initiated.
+Started GET "/auth/google_oauth2" for ::1 at 2019-06-09 12:10:00 -0400
+(google_oauth2) Request phase initiated.
+Started GET "/auth/google_oauth2/callback?state=dc9ed4d23f94817766f818fdc2ca59d20cb10129d78d9f3c&code=4/ZAH6L_tA3odK0b_g_8HayQYUWSZmcSwDKKCAmTtdpneY-nPlxpF40RoC8XrFNnNaaiAfMYiA-DZPhIeNyonvbLQ&scope=email%20profile%20https://www.googleapis.com/auth/userinfo.email%20https://www.googleapis.com/auth/userinfo.profile" for ::1 at 2019-06-09 12:10:03 -0400
+(google_oauth2) Callback phase initiated.
+Processing by SessionsController#create as HTML
+  Parameters: {"state"=>"dc9ed4d23f94817766f818fdc2ca59d20cb10129d78d9f3c", "code"=>"4/ZAH6L_tA3odK0b_g_8HayQYUWSZmcSwDKKCAmTtdpneY-nPlxpF40RoC8XrFNnNaaiAfMYiA-DZPhIeNyonvbLQ", "scope"=>"email profile https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile", "provider"=>"google_oauth2"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."provider" = ? AND "users"."uid" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["provider", "google_oauth2"], ["uid", "116971971835348623652"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:9
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.7ms)
+
+
+  
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such column: users.provider: SELECT  "users".* FROM "users" WHERE "users"."provider" = ? AND "users"."uid" = ? ORDER BY "users"."id" ASC LIMIT ?):
+  
+app/models/user.rb:9:in `from_omniauth'
+app/controllers/sessions_controller.rb:3:in `create'
+Started GET "/" for ::1 at 2019-06-09 12:13:13 -0400
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/jaimecontardo/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by DefaultController#index as HTML
+  Rendering default/index.html.erb within layouts/application
+  Rendered default/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 366ms (Views: 356.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2019-06-09 12:13:14 -0400
+Processing by DefaultController#index as HTML
+  Rendering default/index.html.erb within layouts/application
+  Rendered default/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 77ms (Views: 71.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-06-09 12:13:18 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (16.8ms)
+Completed 200 OK in 87ms (Views: 62.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/auth/google_oauth2" for ::1 at 2019-06-09 12:13:30 -0400
+(google_oauth2) Request phase initiated.
+Started GET "/auth/google_oauth2" for ::1 at 2019-06-09 12:13:30 -0400
+(google_oauth2) Request phase initiated.
+Started GET "/auth/google_oauth2/callback?state=0ef8d55be9020dd7cc7429f96780425903d00ee470f8a045&code=4/ZAGP9fwdufRrEBJB8C1RU1fooFdUsiHjV5yn1Cuc6iAB2vbOtG7wQoVK-fyY0dHCTclyC6LteLhfqOwxI9caZTI&scope=email%20profile%20https://www.googleapis.com/auth/userinfo.email%20https://www.googleapis.com/auth/userinfo.profile" for ::1 at 2019-06-09 12:13:35 -0400
+(google_oauth2) Callback phase initiated.
+Processing by SessionsController#create as HTML
+  Parameters: {"state"=>"0ef8d55be9020dd7cc7429f96780425903d00ee470f8a045", "code"=>"4/ZAGP9fwdufRrEBJB8C1RU1fooFdUsiHjV5yn1Cuc6iAB2vbOtG7wQoVK-fyY0dHCTclyC6LteLhfqOwxI9caZTI", "scope"=>"email profile https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile", "provider"=>"google_oauth2"}
+  [1m[36mUser Load (29.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "jcontardo@miuandes.cl"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/models/user.rb:12
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "jcontardo@miuandes.cl"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:12
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/models/user.rb:12
+Completed 422 Unprocessable Entity in 39ms (ActiveRecord: 30.0ms)
+
+
+  
+ActiveRecord::RecordInvalid (Validation failed: Password can't be blank):
+  
+app/models/user.rb:12:in `block in from_omniauth'
+app/models/user.rb:9:in `tap'
+app/models/user.rb:9:in `from_omniauth'
+app/controllers/sessions_controller.rb:3:in `create'
+Started GET "/" for ::1 at 2019-06-09 12:14:56 -0400
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/jaimecontardo/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by DefaultController#index as HTML
+  Rendering default/index.html.erb within layouts/application
+  Rendered default/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 318ms (Views: 308.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2019-06-09 12:14:58 -0400
+Processing by DefaultController#index as HTML
+  Rendering default/index.html.erb within layouts/application
+  Rendered default/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 77ms (Views: 73.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-06-09 12:15:00 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (17.8ms)
+Completed 200 OK in 90ms (Views: 65.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/auth/google_oauth2" for ::1 at 2019-06-09 12:15:01 -0400
+(google_oauth2) Request phase initiated.
+Started GET "/auth/google_oauth2" for ::1 at 2019-06-09 12:15:01 -0400
+(google_oauth2) Request phase initiated.
+Started GET "/auth/google_oauth2/callback?state=6f77d762f774979ebbe3fd151f69a7ac5ba8a2d83052c24c&code=4/ZAEIHt9jKpd_eQPBVOQJ9RJz9J2BVndrBoA_I9CFMpYkfqfqVO3G2XakrYp-791pFjlnY4oG_2G-kBUMwwV2Juk&scope=email%20profile%20https://www.googleapis.com/auth/userinfo.profile%20https://www.googleapis.com/auth/userinfo.email" for ::1 at 2019-06-09 12:15:06 -0400
+(google_oauth2) Callback phase initiated.
+Processing by SessionsController#create as HTML
+  Parameters: {"state"=>"6f77d762f774979ebbe3fd151f69a7ac5ba8a2d83052c24c", "code"=>"4/ZAEIHt9jKpd_eQPBVOQJ9RJz9J2BVndrBoA_I9CFMpYkfqfqVO3G2XakrYp-791pFjlnY4oG_2G-kBUMwwV2Juk", "scope"=>"email profile https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/userinfo.email", "provider"=>"google_oauth2"}
+  [1m[36mUser Load (9.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "jcontardo@miuandes.cl"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/models/user.rb:13
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "jcontardo@miuandes.cl"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:13
+  [1m[36mUser Create (1.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["email", "jcontardo@miuandes.cl"], ["encrypted_password", "$2a$11$aGT2yzjXDOKPWrbxF/olduUfLK6aeJ2hviJeBkDDczwycNJi9hrNy"], ["name", "JAIME CONTARDO RACZYNSKI"], ["created_at", "2019-06-09 16:15:06.767863"], ["updated_at", "2019-06-09 16:15:06.767863"]]
+  ↳ app/models/user.rb:13
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/models/user.rb:13
+Redirected to http://localhost:3000/
+Completed 302 Found in 237ms (ActiveRecord: 12.9ms)
+
+
+Started GET "/" for ::1 at 2019-06-09 12:15:06 -0400
+Processing by DefaultController#index as HTML
+  Rendering default/index.html.erb within layouts/application
+  Rendered default/index.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 120ms (Views: 117.1ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2019-06-09 12:15:13 -0400
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"p+0Zfugaf0YRPEXVw57/DRPyoWN2pHVofhsTUVEur5jkctcTqQr9ysVHij+mHOrrDVRXW0YMhej3Qru0Jod2Hw=="}
+Redirected to http://localhost:3000/
+Filter chain halted as :verify_signed_out_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-06-09 12:15:13 -0400
+Processing by DefaultController#index as HTML
+  Rendering default/index.html.erb within layouts/application
+  Rendered default/index.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 48ms (Views: 45.3ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2019-06-09 12:15:16 -0400
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"/qd4G+BlVnyfBgP3sqHcWJjxN1ag/uiBj07vkJzJ6yq9OLZ2oXXU8Et9zB3XI8m+hlfBbpBWGAEGF0d162AyrQ=="}
+Redirected to http://localhost:3000/
+Filter chain halted as :verify_signed_out_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-06-09 12:15:16 -0400
+Processing by DefaultController#index as HTML
+  Rendering default/index.html.erb within layouts/application
+  Rendered default/index.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 50ms (Views: 47.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2019-06-09 12:15:18 -0400
+Processing by DefaultController#index as HTML
+  Rendering default/index.html.erb within layouts/application
+  Rendered default/index.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 47ms (Views: 43.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2019-06-09 12:15:20 -0400
+Processing by DefaultController#index as HTML
+  Rendering default/index.html.erb within layouts/application
+  Rendered default/index.html.erb within layouts/application (0.6ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 49ms (Views: 45.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2019-06-09 12:15:21 -0400
+Processing by DefaultController#index as HTML
+  Rendering default/index.html.erb within layouts/application
+  Rendered default/index.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 59ms (Views: 56.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2019-06-09 12:15:21 -0400
+Processing by DefaultController#index as HTML
+  Rendering default/index.html.erb within layouts/application
+  Rendered default/index.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 51ms (Views: 48.2ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2019-06-09 12:15:22 -0400
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"h9SV9dIa3l9FwKGTNm2DdTBCfVTRG/O+yx+9y16iiUvES1uYkwpc05G7bnlT75aTLuSLbOGzAz5CRhUuKQtQzA=="}
+Redirected to http://localhost:3000/
+Filter chain halted as :verify_signed_out_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-06-09 12:15:22 -0400
+Processing by DefaultController#index as HTML
+  Rendering default/index.html.erb within layouts/application
+  Rendered default/index.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 49ms (Views: 46.2ms | ActiveRecord: 0.1ms)
+
+
