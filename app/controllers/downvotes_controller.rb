@@ -62,13 +62,13 @@ class DownvotesController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_downvote
-      @downvote = Downvote.find(params[:id])
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_downvote
+    @downvote = Downvote.find(params[:id])
+  end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def downvote_params
-      params.require(:downvote).permit(:user_id, :post_id)
-    end
+  # Never trust parameters from the scary internet, only allow the white list through.
+  def downvote_params
+    params.require(:downvote).permit(:user_id, :post_id)
+  end
 end

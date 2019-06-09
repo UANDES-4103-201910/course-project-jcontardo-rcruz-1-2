@@ -62,13 +62,13 @@ class DumpstersController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_dumpster
-      @dumpster = Dumpster.find(params[:id])
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_dumpster
+    @dumpster = Dumpster.find(params[:id])
+  end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def dumpster_params
-      params.require(:dumpster).permit(:user_id, :post_id)
-    end
+  # Never trust parameters from the scary internet, only allow the white list through.
+  def dumpster_params
+    params.require(:dumpster).permit(:user_id, :post_id)
+  end
 end
