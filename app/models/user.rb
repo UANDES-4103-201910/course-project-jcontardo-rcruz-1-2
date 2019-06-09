@@ -5,7 +5,6 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable, :trackable
 
   def self.from_omniauth(auth)
-  	puts auth.info.inspect
     where(email: auth.info.email).first_or_initialize.tap do |user|
       user.email = auth.info.email
       user.name = auth.info.name

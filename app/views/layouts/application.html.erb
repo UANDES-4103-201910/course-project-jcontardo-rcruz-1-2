@@ -7,66 +7,55 @@
 
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
 </head>
 <body>
-<nav class="navbar navbar-default" style="background-color:#75b0ec;">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <h2 class="navbar-brand">SHREK SWAMP</h2>
+    <nav class="navbar navbar-default" style="background-color:#75b0ec;">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">SHREK SWAMP</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li><%= link_to 'Home', home_show_url %></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <% if !user_signed_in? %>
+            <li>
+              <%= link_to new_user_registration_path do %>
+                <span class="glyphicon glyphicon-user"></span>
+                Sign Up
+              <% end %>
+            </li>
+            <li>
+              <%= link_to new_user_session_path do %>
+                <span class="glyphicon glyphicon-log-in"></span>
+                Login
+              <% end %>
+            </li>
+          <% else %>
+            <li>
+              <%= link_to edit_user_registration_path do %>
+                <span class="glyphicon glyphicon-user"></span>
+                Profile
+              <% end %>
+            </li>
+            <li>
+              <%= link_to destroy_user_session_path, method: :delete do %>
+                <span class="glyphicon glyphicon-log-out"></span>
+                Logout
+              <% end %>
+            </li>
+          <% end %>
+        </ul>
+      </div>
+    </nav>
+    <div class="alert alert-info" id="ajax_notice" hidden>
     </div>
-    <ul class="nav navbar-nav ">
-
-      <button style="background-color:#75b0ec;border-style:none;"></button>
-      <button><%= link_to 'Home', root_path %></button>
-
-      <button><%= link_to 'Profile', root_path %></button>
-
-
-      <div>
-        <p class="notice"><%= notice %></p>
-      </div>
-      <div>
-        <p class="alert"><%= alert %></p>
-      </div>
-
-
-      <% if !user_signed_in? %>
-        <button>
-          <%= link_to new_user_registration_path do %>
-            <span class="glyphicon glyphicon-user"></span>
-            Sign Up
-          <% end %>
-        </button>
-        <button>
-          <%= link_to new_user_session_path do %>
-            <span class="glyphicon glyphicon-log-in"></span>
-            Login
-          <% end %>
-        </button>
-      <% else %>
-
-        <li>
-          <%= link_to destroy_user_session_path, method: :delete do %>
-            <span class="glyphicon glyphicon-log-out"></span>
-            Logout
-          <% end %>
-        </li>
-      <% end %>
-    </ul>
+    <div class="container">
+      <%= yield %>
   </div>
-</nav>
-
-<div class="alert alert-info" id="ajax_notice" hidden>
-</div>
-<div class="container">
-  <%= yield %>
-</div>
-
-
-
-
-
 </body>
+
 
 
 </html>
