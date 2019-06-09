@@ -62,13 +62,13 @@ class UpvotesController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_upvote
-      @upvote = Upvote.find(params[:id])
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_upvote
+    @upvote = Upvote.find(params[:id])
+  end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def upvote_params
-      params.require(:upvote).permit(:user_id, :post_id)
-    end
+  # Never trust parameters from the scary internet, only allow the white list through.
+  def upvote_params
+    params.require(:upvote).permit(:user_id, :post_id)
+  end
 end
