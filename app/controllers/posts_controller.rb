@@ -1,4 +1,4 @@
-class PostController < ApplicationController
+class PostsController < ApplicationController
   def index
   end
 
@@ -45,7 +45,7 @@ class PostController < ApplicationController
 
   end
 
-  # BORRAR USUARIO
+  # BORRAR post
   def destroy
     @post.destroy
     respond_to do |format|

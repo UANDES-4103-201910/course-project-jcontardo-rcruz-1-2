@@ -21,12 +21,6 @@
         <ul class="nav navbar-nav navbar-right">
           <% if !user_signed_in? %>
             <li>
-              <%= link_to dumpsters_path do %>
-                <span class="glyphicon glyphicon-trash"></span>
-                Dumpster
-              <% end %>
-            </li>
-            <li>
               <%= link_to new_user_registration_path do %>
                 <span class="glyphicon glyphicon-user"></span>
                 Sign Up
@@ -40,7 +34,19 @@
             </li>
           <% else %>
             <li>
-              <%= link_to edit_user_registration_path do %>
+              <%= link_to new_post_path do %>
+                <span class="glyphicon glyphicon-list-alt"></span>
+                New Post
+              <% end %>
+            </li>
+            <li>
+              <%= link_to dumpsters_path do %>
+                <span class="glyphicon glyphicon-trash"></span>
+                Dumpster
+              <% end %>
+            </li>
+            <li>
+              <%= link_to "users/show" do %>
                 <span class="glyphicon glyphicon-user"></span>
                 Profile
               <% end %>

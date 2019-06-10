@@ -3,12 +3,14 @@ Rails.application.routes.draw do
   get 'sessions/destroy'
   get 'home/show'
   get 'default/index'
+
   resources :upvotes
   resources :posts
   resources :dumpsters
   resources :downvotes
   resources :comments
   resources :black_lists
+  resources :users
   
   devise_for :users
   root to: "default#index"

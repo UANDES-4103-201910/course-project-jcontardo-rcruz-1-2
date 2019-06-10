@@ -1,41 +1,39 @@
 <p id="notice"><%= notice %></p>
+<% if current_user %>
+  <p>
+    <strong>Name:</strong>
+    <%= current_user.name %>
+  </p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @user.name %>
-</p>
+  <p>
+    <strong>Password:</strong>
+    <%= current_user.password %>
+  </p>
 
-<p>
-  <strong>Password:</strong>
-  <%= @user.password %>
-</p>
+  <p>
+    <strong>Email:</strong>
+    <%= current_user.email %>
+  </p>
 
-<p>
-  <strong>Email:</strong>
-  <%= @user.email %>
-</p>
+  <p>
+    <strong>Phone number:</strong>
+    <%= current_user.phone_number %>
+  </p>
 
-<p>
-  <strong>Phone number:</strong>
-  <%= @user.phone_number %>
-</p>
+  <p>
+    <strong>Address:</strong>
+    <%= current_user.address %>
+  </p>
 
-<p>
-  <strong>Address:</strong>
-  <%= @user.address %>
-</p>
+  <p>
+    <strong>User type:</strong>
+    <%= current_user.user_type %>
+  </p>
 
-<p>
-  <strong>User type:</strong>
-  <%= @user.User_type %>
-</p>
-
-<p>
-  <strong>Location:</strong>
-  <%= @user.location %>
-</p>
-  <strong>Image:</strong>
-  <%= @user.location %>
-</p>
-<%= link_to 'Edit', edit_user_registration_path, class: "btn btn-default" %>
+  <p>
+    <strong>Location:</strong>
+    <%= current_user.location %>
+  </p>
+<% end %>
+<%= link_to 'Edit', edit_user_path%>
 <%= link_to 'Back', users_path %>

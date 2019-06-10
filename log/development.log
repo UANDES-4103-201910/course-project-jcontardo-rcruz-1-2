@@ -7194,3 +7194,2425 @@ Processing by DefaultController#index as HTML
 Completed 200 OK in 66ms (Views: 62.8ms | ActiveRecord: 0.2ms)
 
 
+Started GET "/users/edit" for ::1 at 2019-06-10 00:21:33 -0400
+  [1m[35m (17.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/jaimecontardo/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by Devise::RegistrationsController#edit as HTML
+Completed 401 Unauthorized in 41ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-06-10 00:21:34 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  [1m[36mUser Load (51.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered devise/shared/_links.html.erb (1.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (586.9ms)
+Completed 200 OK in 8266ms (Views: 8113.2ms | ActiveRecord: 52.2ms)
+
+
+Started GET "/users/user/show" for ::1 at 2019-06-10 00:21:48 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/users/user/show"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2019-06-10 00:27:38 -0400
+Processing by DefaultController#index as HTML
+  Rendering default/index.html.erb within layouts/application
+  Rendered default/index.html.erb within layouts/application (1.1ms)
+  [1m[36mUser Load (36.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 779ms (Views: 712.1ms | ActiveRecord: 38.0ms)
+
+
+Started GET "/user/show" for ::1 at 2019-06-10 00:27:45 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/user/show"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/jaimecontardo/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/jaimecontardo/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/jaimecontardo/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/jaimecontardo/.rvm/gems/ruby-2.5.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/jaimecontardo/.rvm/gems/ruby-2.5.1/bin/rake:23
+Started GET "/user/show" for ::1 at 2019-06-10 00:29:40 -0400
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/jaimecontardo/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  
+ActionController::RoutingError (No route matches [GET] "/user/show"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2019-06-10 00:32:28 -0400
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/jaimecontardo/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by DefaultController#index as HTML
+  Rendering default/index.html.erb within layouts/application
+  Rendered default/index.html.erb within layouts/application (20.5ms)
+  [1m[36mUser Load (51.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."outstanding" = ? LIMIT ?[0m  [["outstanding", 1], ["LIMIT", 3]]
+  ↳ /Users/jaimecontardo/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."outstanding" = ? LIMIT ?[0m  [["outstanding", 1], ["LIMIT", 3]]
+  ↳ /Users/jaimecontardo/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Completed 500 Internal Server Error in 2516ms (ActiveRecord: 53.5ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `users_show' for #<#<Class:0x00007f7f4e020970>:0x00007f7f4e010390>
+Did you mean?  users_show_url):
+    40:             </li>
+    41:           <% else %>
+    42:             <li>
+    43:               <%= link_to users_show do %>
+    44:                 <span class="glyphicon glyphicon-user"></span>
+    45:                 Profile
+    46:               <% end %>
+  
+app/views/layouts/application.html.erb:43:in `_app_views_layouts_application_html_erb___890022837166851003_70092339274700'
+Started GET "/" for ::1 at 2019-06-10 00:32:37 -0400
+Processing by DefaultController#index as HTML
+  Rendering default/index.html.erb within layouts/application
+  Rendered default/index.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."outstanding" = ? LIMIT ?[0m  [["outstanding", 1], ["LIMIT", 3]]
+  ↳ /Users/jaimecontardo/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."outstanding" = ? LIMIT ?[0m  [["outstanding", 1], ["LIMIT", 3]]
+  ↳ /Users/jaimecontardo/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Completed 500 Internal Server Error in 112ms (ActiveRecord: 3.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `users_show' for #<#<Class:0x00007f7f4e020970>:0x00007f7f4ecd8a50>
+Did you mean?  users_show_url):
+    40:             </li>
+    41:           <% else %>
+    42:             <li>
+    43:               <%= link_to users_show do %>
+    44:                 <span class="glyphicon glyphicon-user"></span>
+    45:                 Profile
+    46:               <% end %>
+  
+app/views/layouts/application.html.erb:43:in `_app_views_layouts_application_html_erb___890022837166851003_70092379788340'
+Started GET "/" for ::1 at 2019-06-10 00:33:05 -0400
+Processing by DefaultController#index as HTML
+  Rendering default/index.html.erb within layouts/application
+  Rendered default/index.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 219ms (Views: 200.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/show" for ::1 at 2019-06-10 00:33:08 -0400
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (4.8ms)
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    2: 
+    3: <p>
+    4:   <strong>Name:</strong>
+    5:   <%= @user.name %>
+    6: </p>
+    7: 
+    8: <p>
+  
+app/views/users/show.html.erb:5:in `_app_views_users_show_html_erb___2952642520508759619_70092390996500'
+Started GET "/users/show" for ::1 at 2019-06-10 00:38:50 -0400
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (15.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered users/show.html.erb within layouts/application (43.3ms)
+Completed 500 Internal Server Error in 175ms (ActiveRecord: 15.5ms)
+
+
+  
+ActionView::Template::Error (undefined method `User_type' for #<User:0x00007f7f4e1b5510>
+Did you mean?  user_type=
+               user_type?):
+    27: 
+    28:   <p>
+    29:     <strong>User type:</strong>
+    30:     <%= current_user.User_type %>
+    31:   </p>
+    32: 
+    33:   <p>
+  
+app/views/users/show.html.erb:30:in `_app_views_users_show_html_erb___2952642520508759619_70092378652800'
+Started GET "/users/show" for ::1 at 2019-06-10 00:39:28 -0400
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered users/show.html.erb within layouts/application (357.7ms)
+Completed 500 Internal Server Error in 470ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `users_path' for #<#<Class:0x00007f7f50222ac8>:0x00007f7f4e378fa0>
+Did you mean?  user_session_path):
+    36:   </p>
+    37: <% end %>
+    38: <%= link_to 'Edit', edit_user_registration_path, class: "btn btn-default" %>
+    39: <%= link_to 'Back', users_path %>
+  
+app/views/users/show.html.erb:39:in `_app_views_users_show_html_erb___2952642520508759619_70092374921940'
+Started GET "/users/show" for ::1 at 2019-06-10 00:39:57 -0400
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered users/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 587ms (Views: 584.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/edit" for ::1 at 2019-06-10 00:40:05 -0400
+Processing by Devise::RegistrationsController#edit as HTML
+Completed 401 Unauthorized in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-06-10 00:40:06 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered devise/shared/_links.html.erb (1.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (97.6ms)
+Completed 200 OK in 258ms (Views: 229.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/edit" for ::1 at 2019-06-10 00:45:54 -0400
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/jaimecontardo/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#edit as HTML
+Completed 404 Not Found in 28ms (ActiveRecord: 1.1ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User without an ID):
+  
+app/controllers/users_controller.rb:10:in `edit'
+Started GET "/users/edit" for ::1 at 2019-06-10 00:47:29 -0400
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/jaimecontardo/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#edit as HTML
+Completed 404 Not Found in 10ms (ActiveRecord: 1.1ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User without an ID):
+  
+app/controllers/users_controller.rb:10:in `edit'
+Started GET "/users/edit" for ::1 at 2019-06-10 00:50:23 -0400
+Processing by UsersController#edit as HTML
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: id):
+  
+app/controllers/users_controller.rb:10:in `edit'
+Started GET "/users/edit" for ::1 at 2019-06-10 00:51:01 -0400
+Processing by UsersController#edit as HTML
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: name):
+  
+app/controllers/users_controller.rb:10:in `edit'
+Started GET "/users/edit" for ::1 at 2019-06-10 00:51:52 -0400
+Processing by UsersController#edit as HTML
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: name):
+  
+app/controllers/users_controller.rb:10:in `edit'
+Started GET "/users/edit" for ::1 at 2019-06-10 00:52:01 -0400
+Processing by UsersController#edit as HTML
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: name):
+  
+app/controllers/users_controller.rb:10:in `edit'
+Started GET "/" for ::1 at 2019-06-10 00:52:02 -0400
+Processing by DefaultController#index as HTML
+  Rendering default/index.html.erb within layouts/application
+  Rendered default/index.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (27.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 2092ms (Views: 2006.4ms | ActiveRecord: 29.0ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2019-06-10 00:52:07 -0400
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"ZLIVcbzDOsXGsAu/oIUU5+lneClQ20XEqxAvjHOr+QMnLdsc/dO4SRLLxFXFBwEB98GOEWBztUQiSYdpBAIghA=="}
+Redirected to http://localhost:3000/
+Filter chain halted as :verify_signed_out_user rendered or redirected
+Completed 302 Found in 54ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-06-10 00:52:09 -0400
+Processing by DefaultController#index as HTML
+  Rendering default/index.html.erb within layouts/application
+  Rendered default/index.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 63ms (Views: 59.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/home/show" for ::1 at 2019-06-10 00:52:11 -0400
+Processing by HomeController#show as HTML
+  Rendering home/show.html.erb within layouts/application
+  Rendered home/show.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 64ms (Views: 60.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/show" for ::1 at 2019-06-10 00:52:13 -0400
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered users/show.html.erb within layouts/application (406.3ms)
+Completed 500 Internal Server Error in 440ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `users_edit' for #<#<Class:0x00007fe49e9a03a0>:0x00007fe49f1337e8>
+Did you mean?  users_edit_url):
+    34:     <strong>Location:</strong>
+    35:     <%= current_user.location %>
+    36:   </p>
+    37:   <%= link_to 'Edit', users_edit, class: "btn btn-default" %>
+    38:   <%= link_to 'Back', user_session_path %>
+    39: <% end %>
+  
+app/views/users/show.html.erb:37:in `_app_views_users_show_html_erb___2018966743495173217_70309945083340'
+Started GET "/users/show" for ::1 at 2019-06-10 00:52:42 -0400
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered users/show.html.erb within layouts/application (336.7ms)
+Completed 500 Internal Server Error in 474ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `users_edit' for #<#<Class:0x00007fe49e9a03a0>:0x00007fe49ea291a0>
+Did you mean?  users_edit_url):
+    35:     <%= current_user.location %>
+    36:   </p>
+    37: <% end %>
+    38: <%= link_to 'Edit', users_edit, class: "btn btn-default" %>
+    39: <%= link_to 'Back', user_session_path %>
+  
+app/views/users/show.html.erb:38:in `_app_views_users_show_html_erb___2018966743495173217_70309945363780'
+Started GET "/users/show" for ::1 at 2019-06-10 00:53:01 -0400
+Processing by UsersController#show as HTML
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered users/show.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 823ms (Views: 813.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/edit" for ::1 at 2019-06-10 00:53:04 -0400
+Processing by UsersController#edit as HTML
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: name):
+  
+app/controllers/users_controller.rb:10:in `edit'
+Started GET "/users/edit" for ::1 at 2019-06-10 00:59:14 -0400
+Processing by UsersController#edit as HTML
+Completed 404 Not Found in 11ms (ActiveRecord: 2.5ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User without an ID):
+  
+app/controllers/users_controller.rb:10:in `edit'
+Started GET "/users/edit" for ::1 at 2019-06-10 01:01:55 -0400
+Processing by UsersController#edit as HTML
+Completed 404 Not Found in 5ms (ActiveRecord: 1.1ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User without an ID):
+  
+app/controllers/users_controller.rb:10:in `edit'
+Started GET "/users/edit" for ::1 at 2019-06-10 01:07:04 -0400
+  [1m[35m (25.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/jaimecontardo/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#edit as HTML
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (7.7ms)
+  Rendered users/edit.html.erb within layouts/application (13.3ms)
+Completed 500 Internal Server Error in 77ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `errors' for nil:NilClass):
+     9: 
+    10: 
+    11: <%= form_with(model: user, local: true) do |form| %>
+    12:   <% if user.errors.any? %>
+    13:     <div id="error_explanation">
+    14:       <h2><%= pluralize(user.errors.count, "error") %> prohibited this user from being saved:</h2>
+    15: 
+  
+app/views/users/_form.html.erb:12:in `block in _app_views_users__form_html_erb___468915971984029050_70112745245260'
+app/views/users/_form.html.erb:11:in `_app_views_users__form_html_erb___468915971984029050_70112745245260'
+app/views/users/edit.html.erb:3:in `_app_views_users_edit_html_erb___1126289816565706926_70112721163780'
+Started POST "/__web_console/repl_sessions/45d32e2a144ed2088d88a19053d1a592/trace" for ::1 at 2019-06-10 01:07:22 -0400
+Started POST "/__web_console/repl_sessions/45d32e2a144ed2088d88a19053d1a592/trace" for ::1 at 2019-06-10 01:07:43 -0400
+Started POST "/__web_console/repl_sessions/45d32e2a144ed2088d88a19053d1a592/trace" for ::1 at 2019-06-10 01:16:41 -0400
+Started GET "/users/edit" for ::1 at 2019-06-10 01:22:37 -0400
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/jaimecontardo/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"edit"}
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (17.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered users/show.html.erb within layouts/application (481.2ms)
+Completed 500 Internal Server Error in 567ms (ActiveRecord: 18.1ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `users_edit_url' for #<#<Class:0x00007f846bb29660>:0x00007f846bb20718>
+Did you mean?  users_url):
+    35:     <%= current_user.location %>
+    36:   </p>
+    37: <% end %>
+    38: <%= link_to 'Edit', users_edit_url, class: "btn btn-default" %>
+    39: <%= link_to 'Back', user_session_path %>
+  
+app/views/users/show.html.erb:38:in `_app_views_users_show_html_erb___2350675178447102856_70103359641020'
+Started GET "/users/edit" for ::1 at 2019-06-10 01:24:47 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"edit"}
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered users/show.html.erb within layouts/application (2.9ms)
+Completed 500 Internal Server Error in 1805ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `users_show_url' for #<#<Class:0x00007f846bb29660>:0x00007f8469a54318>
+Did you mean?  users_url):
+    40:             </li>
+    41:           <% else %>
+    42:             <li>
+    43:               <%= link_to users_show_url do %>
+    44:                 <span class="glyphicon glyphicon-user"></span>
+    45:                 Profile
+    46:               <% end %>
+  
+app/views/layouts/application.html.erb:43:in `_app_views_layouts_application_html_erb___170601685263859664_70103342391820'
+Started GET "/users/edit" for ::1 at 2019-06-10 01:25:38 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"edit"}
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered users/show.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 80ms (Views: 75.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/edit/edit" for ::1 at 2019-06-10 01:25:40 -0400
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"edit"}
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (5.6ms)
+  Rendered users/edit.html.erb within layouts/application (10.5ms)
+Completed 500 Internal Server Error in 53ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `errors' for nil:NilClass):
+     9: 
+    10: 
+    11: <%= form_with(model: user, local: true) do |form| %>
+    12:   <% if user.errors.any? %>
+    13:     <div id="error_explanation">
+    14:       <h2><%= pluralize(user.errors.count, "error") %> prohibited this user from being saved:</h2>
+    15: 
+  
+app/views/users/_form.html.erb:12:in `block in _app_views_users__form_html_erb__1930183286567078708_70103342874160'
+app/views/users/_form.html.erb:11:in `_app_views_users__form_html_erb__1930183286567078708_70103342874160'
+app/views/users/edit.html.erb:3:in `_app_views_users_edit_html_erb___3925070533675012844_70103338376200'
+Started GET "/users/edit/edit" for ::1 at 2019-06-10 01:26:55 -0400
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"edit"}
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (4.5ms)
+  Rendered users/edit.html.erb within layouts/application (7.4ms)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `errors' for nil:NilClass):
+     9: 
+    10: 
+    11: <%= form_with(model: user, local: true) do |form| %>
+    12:   <% if user.errors.any? %>
+    13:     <div id="error_explanation">
+    14:       <h2><%= pluralize(user.errors.count, "error") %> prohibited this user from being saved:</h2>
+    15: 
+  
+app/views/users/_form.html.erb:12:in `block in _app_views_users__form_html_erb__1930183286567078708_70103381263560'
+app/views/users/_form.html.erb:11:in `_app_views_users__form_html_erb__1930183286567078708_70103381263560'
+app/views/users/edit.html.erb:3:in `_app_views_users_edit_html_erb___3925070533675012844_70103373784100'
+Started GET "/users/edit/edit" for ::1 at 2019-06-10 01:27:00 -0400
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"edit"}
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (4.7ms)
+  Rendered users/edit.html.erb within layouts/application (7.9ms)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `errors' for nil:NilClass):
+     9: 
+    10: 
+    11: <%= form_with(model: user, local: true) do |form| %>
+    12:   <% if user.errors.any? %>
+    13:     <div id="error_explanation">
+    14:       <h2><%= pluralize(user.errors.count, "error") %> prohibited this user from being saved:</h2>
+    15: 
+  
+app/views/users/_form.html.erb:12:in `block in _app_views_users__form_html_erb__1930183286567078708_70103343300060'
+app/views/users/_form.html.erb:11:in `_app_views_users__form_html_erb__1930183286567078708_70103343300060'
+app/views/users/edit.html.erb:3:in `_app_views_users_edit_html_erb___3925070533675012844_70103343391260'
+Started GET "/users/edit/" for ::1 at 2019-06-10 01:27:02 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"edit"}
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered users/show.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 65ms (Views: 62.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/edit/edit" for ::1 at 2019-06-10 01:27:05 -0400
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"edit"}
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (4.8ms)
+  Rendered users/edit.html.erb within layouts/application (7.5ms)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `errors' for nil:NilClass):
+     9: 
+    10: 
+    11: <%= form_with(model: user, local: true) do |form| %>
+    12:   <% if user.errors.any? %>
+    13:     <div id="error_explanation">
+    14:       <h2><%= pluralize(user.errors.count, "error") %> prohibited this user from being saved:</h2>
+    15: 
+  
+app/views/users/_form.html.erb:12:in `block in _app_views_users__form_html_erb__1930183286567078708_70103374077560'
+app/views/users/_form.html.erb:11:in `_app_views_users__form_html_erb__1930183286567078708_70103374077560'
+app/views/users/edit.html.erb:3:in `_app_views_users_edit_html_erb___3925070533675012844_70103374126680'
+Started GET "/users" for ::1 at 2019-06-10 01:27:20 -0400
+Processing by UsersController#index as HTML
+Started GET "/users/sign_in" for ::1 at 2019-06-10 01:27:20 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (122.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered users/show.html.erb within layouts/application (126.9ms)
+Completed 500 Internal Server Error in 139ms (ActiveRecord: 122.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"edit", :controller=>"users", :id=>nil}, missing required keys: [:id]):
+    35:     <%= current_user.location %>
+    36:   </p>
+    37: <% end %>
+    38: <%= link_to 'Edit', edit_user_path(@user) %>
+    39: <%= link_to 'Back', user_session_path %>
+  
+app/views/users/show.html.erb:38:in `_app_views_users_show_html_erb___2350675178447102856_70103374167840'
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (5.2ms)
+Completed 500 Internal Server Error in 317ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    17:   </thead>
+    18: 
+    19:   <tbody>
+    20:     <% @users.each do |user| %>
+    21:       <tr>
+    22:         <td><%= user.name %></td>
+    23:         <td><%= user.password %></td>
+  
+app/views/users/index.html.erb:20:in `_app_views_users_index_html_erb__2371729069454249262_70103373761220'
+Started GET "/users/sign_in" for ::1 at 2019-06-10 01:27:25 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered users/show.html.erb within layouts/application (7.8ms)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"edit", :controller=>"users", :id=>nil}, missing required keys: [:id]):
+    35:     <%= current_user.location %>
+    36:   </p>
+    37: <% end %>
+    38: <%= link_to 'Edit', edit_user_path(@user) %>
+    39: <%= link_to 'Back', user_session_path %>
+  
+app/views/users/show.html.erb:38:in `_app_views_users_show_html_erb___2350675178447102856_70103332680480'
+Started GET "/" for ::1 at 2019-06-10 01:27:25 -0400
+Processing by DefaultController#index as HTML
+  Rendering default/index.html.erb within layouts/application
+  Rendered default/index.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 72ms (Views: 58.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/show" for ::1 at 2019-06-10 01:27:27 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"show"}
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered users/show.html.erb within layouts/application (3.9ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"edit", :controller=>"users", :id=>nil}, missing required keys: [:id]):
+    35:     <%= current_user.location %>
+    36:   </p>
+    37: <% end %>
+    38: <%= link_to 'Edit', edit_user_path(@user) %>
+    39: <%= link_to 'Back', user_session_path %>
+  
+app/views/users/show.html.erb:38:in `_app_views_users_show_html_erb___2350675178447102856_70103380286440'
+Started GET "/" for ::1 at 2019-06-10 01:28:49 -0400
+Started GET "/" for ::1 at 2019-06-10 01:28:49 -0400
+Started GET "/users/show" for ::1 at 2019-06-10 01:28:49 -0400
+Processing by DefaultController#index as HTML
+Processing by DefaultController#index as HTML
+Processing by UsersController#show as HTML
+  Rendering default/index.html.erb within layouts/application
+  Parameters: {"id"=>"show"}
+  Rendered default/index.html.erb within layouts/application (0.4ms)
+  Rendering default/index.html.erb within layouts/application
+  Rendering users/show.html.erb within layouts/application
+  Rendered default/index.html.erb within layouts/application (0.1ms)
+  [1m[36mUser Load (44.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered users/show.html.erb within layouts/application (48.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 454ms (Views: 446.8ms | ActiveRecord: 0.2ms)
+
+
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+Completed 200 OK in 255ms (Views: 201.0ms | ActiveRecord: 44.2ms)
+
+
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 270ms (Views: 262.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/3/edit" for ::1 at 2019-06-10 01:28:53 -0400
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"3"}
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (4.6ms)
+  Rendered users/edit.html.erb within layouts/application (7.8ms)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `errors' for nil:NilClass):
+     9: 
+    10: 
+    11: <%= form_with(model: user, local: true) do |form| %>
+    12:   <% if user.errors.any? %>
+    13:     <div id="error_explanation">
+    14:       <h2><%= pluralize(user.errors.count, "error") %> prohibited this user from being saved:</h2>
+    15: 
+  
+app/views/users/_form.html.erb:12:in `block in _app_views_users__form_html_erb__1930183286567078708_70103362022240'
+app/views/users/_form.html.erb:11:in `_app_views_users__form_html_erb__1930183286567078708_70103362022240'
+app/views/users/edit.html.erb:3:in `_app_views_users_edit_html_erb___3925070533675012844_70103362104140'
+Started GET "/users/3/edit" for ::1 at 2019-06-10 01:32:38 -0400
+  [1m[35m (21.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/jaimecontardo/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"3"}
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (24.8ms)
+  Rendered users/edit.html.erb within layouts/application (33.2ms)
+Completed 500 Internal Server Error in 189ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `errors' for nil:NilClass):
+     9: 
+    10: 
+    11: <%= form_with(model: user, local: true) do |form| %>
+    12:   <% if user.errors.any? %>
+    13:     <div id="error_explanation">
+    14:       <h2><%= pluralize(user.errors.count, "error") %> prohibited this user from being saved:</h2>
+    15: 
+  
+app/views/users/_form.html.erb:12:in `block in _app_views_users__form_html_erb___4016427668747630895_70145793312520'
+app/views/users/_form.html.erb:11:in `_app_views_users__form_html_erb___4016427668747630895_70145793312520'
+app/views/users/edit.html.erb:3:in `_app_views_users_edit_html_erb___3780157261186598677_70145788836580'
+Started GET "/users/sign_in" for ::1 at 2019-06-10 01:32:39 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+Started GET "/users/show" for ::1 at 2019-06-10 01:32:39 -0400
+Started GET "/" for ::1 at 2019-06-10 01:32:39 -0400
+  Rendering users/show.html.erb within layouts/application
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"show"}
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mUser Load (50.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  ↳ app/controllers/application_controller.rb:6
+  Rendered users/show.html.erb within layouts/application (853.1ms)
+Completed 500 Internal Server Error in 997ms (ActiveRecord: 51.1ms)
+
+
+  
+  Rendered users/show.html.erb within layouts/application (954.2ms)
+ActionView::Template::Error (undefined local variable or method `edit_user' for #<#<Class:0x00007f982da6e218>:0x00007f982ed5c438>
+Did you mean?  edit_user_url):
+    35:     <%= current_user.location %>
+    36:   </p>
+    37: <% end %>
+    38: <%= link_to 'Edit', edit_user %> |
+    39: <%= link_to 'Back', user_session_path %>
+Completed 500 Internal Server Error in 966ms (ActiveRecord: 0.6ms)
+
+
+  
+  
+ActionView::Template::Error (undefined local variable or method `edit_user' for #<#<Class:0x00007f982da6e218>:0x00007f982d5913d0>
+Did you mean?  edit_user_url):
+app/views/users/show.html.erb:38:in `_app_views_users_show_html_erb___280584350830269422_70145798760460'
+    35:     <%= current_user.location %>
+    36:   </p>
+    37: <% end %>
+    38: <%= link_to 'Edit', edit_user %> |
+    39: <%= link_to 'Back', user_session_path %>
+  
+app/views/users/show.html.erb:38:in `_app_views_users_show_html_erb___280584350830269422_70145786288300'
+Processing by DefaultController#index as HTML
+  Rendering default/index.html.erb within layouts/application
+  Rendered default/index.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 793ms (Views: 779.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/show" for ::1 at 2019-06-10 01:32:44 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"show"}
+Started GET "/users/users/show" for ::1 at 2019-06-10 01:32:44 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/users/users/show"):
+  
+  Rendering users/show.html.erb within layouts/application
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered users/show.html.erb within layouts/application (410.8ms)
+Completed 500 Internal Server Error in 425ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `edit_user' for #<#<Class:0x00007f982da6e218>:0x00007f982dbf7288>
+Did you mean?  edit_user_url):
+    35:     <%= current_user.location %>
+    36:   </p>
+    37: <% end %>
+    38: <%= link_to 'Edit', edit_user %> |
+    39: <%= link_to 'Back', user_session_path %>
+  
+app/views/users/show.html.erb:38:in `_app_views_users_show_html_erb___280584350830269422_70145789640300'
+Started GET "/users" for ::1 at 2019-06-10 01:33:51 -0400
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (7.7ms)
+Completed 500 Internal Server Error in 52ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    17:   </thead>
+    18: 
+    19:   <tbody>
+    20:     <% @users.each do |user| %>
+    21:       <tr>
+    22:         <td><%= user.name %></td>
+    23:         <td><%= user.password %></td>
+  
+app/views/users/index.html.erb:20:in `_app_views_users_index_html_erb___4606142538491485431_70145819683540'
+Started GET "/users" for ::1 at 2019-06-10 01:33:51 -0400
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (5.1ms)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    17:   </thead>
+    18: 
+    19:   <tbody>
+    20:     <% @users.each do |user| %>
+    21:       <tr>
+    22:         <td><%= user.name %></td>
+    23:         <td><%= user.password %></td>
+  
+app/views/users/index.html.erb:20:in `_app_views_users_index_html_erb___4606142538491485431_70145827886860'
+Started GET "/users/sign_in" for ::1 at 2019-06-10 01:34:10 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered users/show.html.erb within layouts/application (369.0ms)
+Completed 500 Internal Server Error in 382ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `edit_user' for #<#<Class:0x00007f982da6e218>:0x00007f9831427db0>
+Did you mean?  edit_user_url):
+    35:     <%= current_user.location %>
+    36:   </p>
+    37: <% end %>
+    38: <%= link_to 'Edit', edit_user %> |
+    39: <%= link_to 'Back', user_session_path %>
+  
+app/views/users/show.html.erb:38:in `_app_views_users_show_html_erb___280584350830269422_70145819109780'
+Started GET "/" for ::1 at 2019-06-10 01:34:11 -0400
+Processing by DefaultController#index as HTML
+  Rendering default/index.html.erb within layouts/application
+Started GET "/users/show" for ::1 at 2019-06-10 01:34:11 -0400
+  Rendered default/index.html.erb within layouts/application (0.7ms)
+Started GET "/" for ::1 at 2019-06-10 01:34:11 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"show"}
+  Rendering users/show.html.erb within layouts/application
+Processing by DefaultController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering default/index.html.erb within layouts/application
+  Rendered default/index.html.erb within layouts/application (0.4ms)
+  Rendered users/show.html.erb within layouts/application (427.8ms)
+Completed 500 Internal Server Error in 448ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `edit_user' for #<#<Class:0x00007f982da6e218>:0x00007f9832532498>
+Did you mean?  edit_user_url):
+    35:     <%= current_user.location %>
+    36:   </p>
+    37: <% end %>
+    38: <%= link_to 'Edit', edit_user %> |
+    39: <%= link_to 'Back', user_session_path %>
+  
+app/views/users/show.html.erb:38:in `_app_views_users_show_html_erb___280584350830269422_70145828034260'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 1296ms (Views: 1290.5ms | ActiveRecord: 0.2ms)
+
+
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 1237ms (Views: 1186.1ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2019-06-10 01:34:14 -0400
+Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"TxCgisJ7IXwSByDvj+vdVZghJmoGn1YJwlXNhDH5A1IMj27ng2uj8MZ87wXqacizhofQUjY3polLDGVhRlDa1Q==", "id"=>"sign_out"}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `destroy' for nil:NilClass):
+  
+app/controllers/users_controller.rb:45:in `destroy'
+Started DELETE "/users/sign_out" for ::1 at 2019-06-10 01:35:03 -0400
+  
+AbstractController::ActionNotFound (The action 'destroy' could not be found for UsersController):
+  
+actionpack (5.2.3) lib/abstract_controller/base.rb:129:in `process'
+actionview (5.2.3) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.3) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.3) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:840:in `call'
+omniauth (1.9.0) lib/omniauth/strategy.rb:192:in `call!'
+omniauth (1.9.0) lib/omniauth/strategy.rb:169:in `call'
+omniauth (1.9.0) lib/omniauth/builder.rb:64:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (5.2.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started DELETE "/users/sign_out" for ::1 at 2019-06-10 01:35:43 -0400
+  
+AbstractController::ActionNotFound (The action 'destroy' could not be found for UsersController):
+  
+actionpack (5.2.3) lib/abstract_controller/base.rb:129:in `process'
+actionview (5.2.3) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.3) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.3) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:840:in `call'
+omniauth (1.9.0) lib/omniauth/strategy.rb:192:in `call!'
+omniauth (1.9.0) lib/omniauth/strategy.rb:169:in `call'
+omniauth (1.9.0) lib/omniauth/builder.rb:64:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (5.2.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started DELETE "/users/sign_out" for ::1 at 2019-06-10 01:36:13 -0400
+  
+AbstractController::ActionNotFound (The action 'destroy' could not be found for UsersController):
+  
+actionpack (5.2.3) lib/abstract_controller/base.rb:129:in `process'
+actionview (5.2.3) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.3) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.3) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:840:in `call'
+omniauth (1.9.0) lib/omniauth/strategy.rb:192:in `call!'
+omniauth (1.9.0) lib/omniauth/strategy.rb:169:in `call'
+omniauth (1.9.0) lib/omniauth/builder.rb:64:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (5.2.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started DELETE "/users/sign_out" for ::1 at 2019-06-10 01:36:34 -0400
+  
+AbstractController::ActionNotFound (The action 'destroy' could not be found for UsersController):
+  
+actionpack (5.2.3) lib/abstract_controller/base.rb:129:in `process'
+actionview (5.2.3) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.3) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.3) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:840:in `call'
+omniauth (1.9.0) lib/omniauth/strategy.rb:192:in `call!'
+omniauth (1.9.0) lib/omniauth/strategy.rb:169:in `call'
+omniauth (1.9.0) lib/omniauth/builder.rb:64:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (5.2.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/users/sign_out" for ::1 at 2019-06-10 01:36:39 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_out"}
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (6.1ms)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    2: 
+    3: <p>
+    4:   <strong>Name:</strong>
+    5:   <%= @user.name %>
+    6: </p>
+    7: 
+    8: <p>
+  
+app/views/users/show.html.erb:5:in `_app_views_users_show_html_erb___280584350830269422_70145827505220'
+Started GET "/users" for ::1 at 2019-06-10 01:36:40 -0400
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (6.3ms)
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    17:   </thead>
+    18: 
+    19:   <tbody>
+    20:     <% @users.each do |user| %>
+    21:       <tr>
+    22:         <td><%= user.name %></td>
+    23:         <td><%= user.password %></td>
+  
+app/views/users/index.html.erb:20:in `_app_views_users_index_html_erb___4606142538491485431_70145819031460'
+Started GET "/users/sign_in" for ::1 at 2019-06-10 01:36:40 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (56.0ms)
+Completed 500 Internal Server Error in 146ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    2: 
+    3: <p>
+    4:   <strong>Name:</strong>
+    5:   <%= @user.name %>
+    6: </p>
+    7: 
+    8: <p>
+  
+app/views/users/show.html.erb:5:in `_app_views_users_show_html_erb___280584350830269422_70145847057240'
+Started GET "/" for ::1 at 2019-06-10 01:36:41 -0400
+Started GET "/users/show" for ::1 at 2019-06-10 01:36:41 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"show"}
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (4.4ms)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    2: 
+    3: <p>
+    4:   <strong>Name:</strong>
+    5:   <%= @user.name %>
+    6: </p>
+    7: 
+    8: <p>
+  
+app/views/users/show.html.erb:5:in `_app_views_users_show_html_erb___280584350830269422_70145839869120'
+Processing by DefaultController#index as HTML
+Started GET "/" for ::1 at 2019-06-10 01:36:42 -0400
+Processing by DefaultController#index as HTML
+  Rendering default/index.html.erb within layouts/application
+  Rendered default/index.html.erb within layouts/application (0.4ms)
+  Rendering default/index.html.erb within layouts/application
+  Rendered default/index.html.erb within layouts/application (0.1ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 187ms (Views: 181.4ms | ActiveRecord: 1.2ms)
+
+
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 172ms (Views: 167.3ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/users/show" for ::1 at 2019-06-10 01:36:44 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"show"}
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (4.2ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    2: 
+    3: <p>
+    4:   <strong>Name:</strong>
+    5:   <%= @user.name %>
+    6: </p>
+    7: 
+    8: <p>
+  
+app/views/users/show.html.erb:5:in `_app_views_users_show_html_erb___280584350830269422_70145846367960'
+Started GET "/users/show" for ::1 at 2019-06-10 01:37:42 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"show"}
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered users/show.html.erb within layouts/application (18.9ms)
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `User_type' for #<User:0x00007f9832662930>
+Did you mean?  user_type=
+               user_type?):
+    27: 
+    28:   <p>
+    29:     <strong>User type:</strong>
+    30:     <%= current_user.User_type %>
+    31:   </p>
+    32: 
+    33:   <p>
+  
+app/views/users/show.html.erb:30:in `_app_views_users_show_html_erb___280584350830269422_70145789808580'
+Started GET "/users/show" for ::1 at 2019-06-10 01:37:50 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"show"}
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered users/show.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 78ms (Views: 74.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/edit" for ::1 at 2019-06-10 01:37:52 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"edit"}
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered users/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 73ms (Views: 69.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/edit" for ::1 at 2019-06-10 01:37:55 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"edit"}
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered users/show.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 61ms (Views: 58.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/edit" for ::1 at 2019-06-10 01:37:56 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"edit"}
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered users/show.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 89ms (Views: 85.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/edit" for ::1 at 2019-06-10 01:37:56 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"edit"}
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered users/show.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 66ms (Views: 62.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/edit" for ::1 at 2019-06-10 01:37:56 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"edit"}
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered users/show.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 75ms (Views: 71.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/edit" for ::1 at 2019-06-10 01:37:57 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"edit"}
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered users/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 63ms (Views: 58.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/edit" for ::1 at 2019-06-10 01:37:57 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"edit"}
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered users/show.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 62ms (Views: 59.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/edit" for ::1 at 2019-06-10 01:37:57 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"edit"}
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered users/show.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 61ms (Views: 58.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/edit" for ::1 at 2019-06-10 01:37:57 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"edit"}
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered users/show.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 62ms (Views: 59.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/edit" for ::1 at 2019-06-10 01:37:57 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"edit"}
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered users/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 62ms (Views: 58.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/edit" for ::1 at 2019-06-10 01:38:09 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"edit"}
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered users/show.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 72ms (Views: 69.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/edit/edit" for ::1 at 2019-06-10 01:38:11 -0400
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"edit"}
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (4.5ms)
+  Rendered users/edit.html.erb within layouts/application (14.7ms)
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `errors' for nil:NilClass):
+     9: 
+    10: 
+    11: <%= form_with(model: user, local: true) do |form| %>
+    12:   <% if user.errors.any? %>
+    13:     <div id="error_explanation">
+    14:       <h2><%= pluralize(user.errors.count, "error") %> prohibited this user from being saved:</h2>
+    15: 
+  
+app/views/users/_form.html.erb:12:in `block in _app_views_users__form_html_erb___4016427668747630895_70145790991500'
+app/views/users/_form.html.erb:11:in `_app_views_users__form_html_erb___4016427668747630895_70145790991500'
+app/views/users/edit.html.erb:3:in `_app_views_users_edit_html_erb___3780157261186598677_70145784856660'
+Started GET "/users/edit/edit" for ::1 at 2019-06-10 01:38:25 -0400
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"edit"}
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (6.4ms)
+  Rendered users/edit.html.erb within layouts/application (9.5ms)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `errors' for nil:NilClass):
+     9: 
+    10: 
+    11: <%= form_with(model: user, local: true) do |form| %>
+    12:   <% if user.errors.any? %>
+    13:     <div id="error_explanation">
+    14:       <h2><%= pluralize(user.errors.count, "error") %> prohibited this user from being saved:</h2>
+    15: 
+  
+app/views/users/_form.html.erb:12:in `block in _app_views_users__form_html_erb___4016427668747630895_70145828474760'
+app/views/users/_form.html.erb:11:in `_app_views_users__form_html_erb___4016427668747630895_70145828474760'
+app/views/users/edit.html.erb:3:in `_app_views_users_edit_html_erb___3780157261186598677_70145827360500'
+Started GET "/users/edit/edit" for ::1 at 2019-06-10 01:38:36 -0400
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"edit"}
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (4.4ms)
+  Rendered users/edit.html.erb within layouts/application (7.3ms)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `errors' for nil:NilClass):
+     9: 
+    10: 
+    11: <%= form_with(model: user, local: true) do |form| %>
+    12:   <% if user.errors.any? %>
+    13:     <div id="error_explanation">
+    14:       <h2><%= pluralize(user.errors.count, "error") %> prohibited this user from being saved:</h2>
+    15: 
+  
+app/views/users/_form.html.erb:12:in `block in _app_views_users__form_html_erb___4016427668747630895_70145840838200'
+app/views/users/_form.html.erb:11:in `_app_views_users__form_html_erb___4016427668747630895_70145840838200'
+app/views/users/edit.html.erb:3:in `_app_views_users_edit_html_erb___3780157261186598677_70145790694940'
+Started GET "/users/edit" for ::1 at 2019-06-10 01:38:37 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"edit"}
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered users/show.html.erb within layouts/application (566.3ms)
+Started GET "/users/sign_in" for ::1 at 2019-06-10 01:38:38 -0400
+Completed 500 Internal Server Error in 579ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `update_user_path' for #<#<Class:0x00007f9832430068>:0x00007f9833a35930>
+Did you mean?  edit_user_path):
+Processing by UsersController#show as HTML
+    35:     <%= current_user.location %>
+    36:   </p>
+    37: <% end %>
+    38: <%= link_to 'Edit', update_user_path, class: "btn btn-default" %>
+    39: <%= link_to 'Back', users_path %>
+  
+app/views/users/show.html.erb:38:in `_app_views_users_show_html_erb___280584350830269422_70145839051020'
+  Parameters: {"id"=>"sign_in"}
+Started GET "/users" for ::1 at 2019-06-10 01:38:38 -0400
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+Started GET "/users" for ::1 at 2019-06-10 01:38:38 -0400
+  Rendered users/show.html.erb within layouts/application (513.5ms)
+  Rendered users/index.html.erb within layouts/application (388.1ms)
+Completed 500 Internal Server Error in 511ms (ActiveRecord: 0.0ms)
+
+
+Processing by UsersController#index as HTML
+  
+Completed 500 Internal Server Error in 534ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `update_user_path' for #<#<Class:0x00007f9832430068>:0x00007f98312253c8>
+Did you mean?  edit_user_path):
+    35:     <%= current_user.location %>
+    36:   </p>
+    37: <% end %>
+    38: <%= link_to 'Edit', update_user_path, class: "btn btn-default" %>
+    39: <%= link_to 'Back', users_path %>
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+  
+  Rendering users/index.html.erb within layouts/application
+    17:   </thead>
+    18: 
+    19:   <tbody>
+    20:     <% @users.each do |user| %>
+    21:       <tr>
+    22:         <td><%= user.name %></td>
+    23:         <td><%= user.password %></td>
+  
+app/views/users/show.html.erb:38:in `_app_views_users_show_html_erb___280584350830269422_70145818080180'
+app/views/users/index.html.erb:20:in `_app_views_users_index_html_erb___4606142538491485431_70145826598360'
+  Rendered users/index.html.erb within layouts/application (4.1ms)
+Completed 500 Internal Server Error in 159ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    17:   </thead>
+    18: 
+    19:   <tbody>
+    20:     <% @users.each do |user| %>
+    21:       <tr>
+    22:         <td><%= user.name %></td>
+    23:         <td><%= user.password %></td>
+  
+app/views/users/index.html.erb:20:in `_app_views_users_index_html_erb___4606142538491485431_70145795114640'
+Started GET "/users/sign_in" for ::1 at 2019-06-10 01:38:44 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"sign_in"}
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered users/show.html.erb within layouts/application (388.8ms)
+Completed 500 Internal Server Error in 402ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `update_user_path' for #<#<Class:0x00007f9832430068>:0x00007f98326e2ef0>
+Did you mean?  edit_user_path):
+    35:     <%= current_user.location %>
+    36:   </p>
+    37: <% end %>
+    38: <%= link_to 'Edit', update_user_path, class: "btn btn-default" %>
+    39: <%= link_to 'Back', users_path %>
+  
+app/views/users/show.html.erb:38:in `_app_views_users_show_html_erb___280584350830269422_70145828920300'
+Started GET "/" for ::1 at 2019-06-10 01:38:44 -0400
+Started GET "/users/show" for ::1 at 2019-06-10 01:38:44 -0400
+Processing by DefaultController#index as HTML
+Started GET "/" for ::1 at 2019-06-10 01:38:45 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"show"}
+  Rendering default/index.html.erb within layouts/application
+Processing by DefaultController#index as HTML
+  Rendered default/index.html.erb within layouts/application (0.4ms)
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendering default/index.html.erb within layouts/application
+  Rendered default/index.html.erb within layouts/application (0.1ms)
+  Rendered users/show.html.erb within layouts/application (384.2ms)
+Completed 500 Internal Server Error in 493ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `update_user_path' for #<#<Class:0x00007f9832430068>:0x00007f982e0cb7a0>
+Did you mean?  edit_user_path):
+    35:     <%= current_user.location %>
+    36:   </p>
+    37: <% end %>
+    38: <%= link_to 'Edit', update_user_path, class: "btn btn-default" %>
+    39: <%= link_to 'Back', users_path %>
+  
+app/views/users/show.html.erb:38:in `_app_views_users_show_html_erb___280584350830269422_70145792171980'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 1311ms (Views: 1258.4ms | ActiveRecord: 0.2ms)
+
+
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 1439ms (Views: 1391.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/users/show" for ::1 at 2019-06-10 01:38:48 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"show"}
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered users/show.html.erb within layouts/application (369.1ms)
+Completed 500 Internal Server Error in 381ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `update_user_path' for #<#<Class:0x00007f9832430068>:0x00007f982e612ee8>
+Did you mean?  edit_user_path):
+    35:     <%= current_user.location %>
+    36:   </p>
+    37: <% end %>
+    38: <%= link_to 'Edit', update_user_path, class: "btn btn-default" %>
+    39: <%= link_to 'Back', users_path %>
+  
+app/views/users/show.html.erb:38:in `_app_views_users_show_html_erb___280584350830269422_70145794940300'
+Started GET "/" for ::1 at 2019-06-10 01:39:04 -0400
+Started GET "/users/show" for ::1 at 2019-06-10 01:39:04 -0400
+Processing by DefaultController#index as HTML
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"show"}
+  Rendering default/index.html.erb within layouts/application
+  Rendered default/index.html.erb within layouts/application (0.4ms)
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered users/show.html.erb within layouts/application (1.9ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 137ms (Views: 134.4ms | ActiveRecord: 0.2ms)
+
+
+Completed 200 OK in 127ms (Views: 123.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/show/edit" for ::1 at 2019-06-10 01:39:08 -0400
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"show"}
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (4.7ms)
+  Rendered users/edit.html.erb within layouts/application (8.0ms)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `errors' for nil:NilClass):
+     9: 
+    10: 
+    11: <%= form_with(model: user, local: true) do |form| %>
+    12:   <% if user.errors.any? %>
+    13:     <div id="error_explanation">
+    14:       <h2><%= pluralize(user.errors.count, "error") %> prohibited this user from being saved:</h2>
+    15: 
+  
+app/views/users/_form.html.erb:12:in `block in _app_views_users__form_html_erb___4016427668747630895_70145790343980'
+app/views/users/_form.html.erb:11:in `_app_views_users__form_html_erb___4016427668747630895_70145790343980'
+app/views/users/edit.html.erb:3:in `_app_views_users_edit_html_erb___3780157261186598677_70145827635560'
+Started GET "/users/show/edit" for ::1 at 2019-06-10 01:39:34 -0400
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"show"}
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (8.4ms)
+  Rendered users/edit.html.erb within layouts/application (13.0ms)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `errors' for nil:NilClass):
+     9: 
+    10: 
+    11: <%= form_with(model: user, local: true) do |form| %>
+    12:   <% if user.errors.any? %>
+    13:     <div id="error_explanation">
+    14:       <h2><%= pluralize(user.errors.count, "error") %> prohibited this user from being saved:</h2>
+    15: 
+  
+app/views/users/_form.html.erb:12:in `block in _app_views_users__form_html_erb___4016427668747630895_70145789007440'
+app/views/users/_form.html.erb:11:in `_app_views_users__form_html_erb___4016427668747630895_70145789007440'
+app/views/users/edit.html.erb:3:in `_app_views_users_edit_html_erb___3780157261186598677_70145817410420'
+Started GET "/users/show/" for ::1 at 2019-06-10 01:39:34 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"show"}
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered users/show.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 629ms (Views: 625.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/show/" for ::1 at 2019-06-10 01:41:02 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"show"}
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered users/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 64ms (Views: 60.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/dumpsters" for ::1 at 2019-06-10 01:41:03 -0400
+Processing by DumpstersController#index as HTML
+  Rendering dumpsters/index.html.erb within layouts/application
+  [1m[36mDumpster Load (7.7ms)[0m  [1m[34mSELECT "dumpsters".* FROM "dumpsters"[0m
+  ↳ app/views/dumpsters/index.html.erb:15
+  Rendered dumpsters/index.html.erb within layouts/application (10.9ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 171ms (Views: 76.7ms | ActiveRecord: 8.3ms)
+
+
+Started GET "/dumpsters/new" for ::1 at 2019-06-10 01:41:07 -0400
+Processing by DumpstersController#new as HTML
+  Rendering dumpsters/new.html.erb within layouts/application
+  Rendered dumpsters/_form.html.erb (112.4ms)
+  Rendered dumpsters/new.html.erb within layouts/application (115.5ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 191ms (Views: 180.8ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/dumpsters" for ::1 at 2019-06-10 01:41:09 -0400
+Processing by DumpstersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lL20K+j+QiOuvrBu1XJvIkqkGO1RIODzrMKZXRYRRbDRPp9hPgApStGybO6RV+88kky9Fa/8kcqfLczqP1VL3A==", "dumpster"=>{"user_id"=>"", "post_id"=>""}, "commit"=>"Create Dumpster"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/dumpsters_controller.rb:30
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/dumpsters_controller.rb:30
+  Rendering dumpsters/new.html.erb within layouts/application
+  Rendered dumpsters/_form.html.erb (4.5ms)
+  Rendered dumpsters/new.html.erb within layouts/application (7.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 115ms (Views: 67.4ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/dumpsters" for ::1 at 2019-06-10 01:41:12 -0400
+Processing by DumpstersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5yWAlE5J0Zrou4uKgG4RpcWlylW4UZccIVqgPNsn7Nmkuk75D1lTFjzARGDl7ARD2wM8bYj5Z5yoAwjZrI41Xg==", "dumpster"=>{"user_id"=>"1", "post_id"=>""}, "commit"=>"Create Dumpster"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/dumpsters_controller.rb:30
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/dumpsters_controller.rb:30
+  [1m[36mDumpster Create (32.3ms)[0m  [1m[32mINSERT INTO "dumpsters" ("user_id", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["user_id", 1], ["created_at", "2019-06-10 05:41:12.754504"], ["updated_at", "2019-06-10 05:41:12.754504"]]
+  ↳ app/controllers/dumpsters_controller.rb:30
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/dumpsters_controller.rb:30
+Redirected to http://localhost:3000/dumpsters/2
+Completed 302 Found in 43ms (ActiveRecord: 33.8ms)
+
+
+Started GET "/dumpsters/2" for ::1 at 2019-06-10 01:41:12 -0400
+Processing by DumpstersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDumpster Load (0.5ms)[0m  [1m[34mSELECT  "dumpsters".* FROM "dumpsters" WHERE "dumpsters"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/dumpsters_controller.rb:67
+  Rendering dumpsters/show.html.erb within layouts/application
+  Rendered dumpsters/show.html.erb within layouts/application (1.0ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 76ms (Views: 69.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/dumpsters/2/edit" for ::1 at 2019-06-10 01:41:15 -0400
+Processing by DumpstersController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDumpster Load (0.3ms)[0m  [1m[34mSELECT  "dumpsters".* FROM "dumpsters" WHERE "dumpsters"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/dumpsters_controller.rb:67
+  Rendering dumpsters/edit.html.erb within layouts/application
+  Rendered dumpsters/_form.html.erb (2.9ms)
+  Rendered dumpsters/edit.html.erb within layouts/application (6.2ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 96ms (Views: 59.6ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/dumpsters/2" for ::1 at 2019-06-10 01:41:21 -0400
+Processing by DumpstersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"h8qlqDqHsNNNcfGq6gs5oBVmXbno6rnz9+zGSQAZe4x+XPVM8/UZA+SVpUav8z5JNL3bgiFSyFJTzsLvHJ9qoA==", "dumpster"=>{"user_id"=>"2", "post_id"=>""}, "commit"=>"Update Dumpster", "id"=>"2"}
+  [1m[36mDumpster Load (0.2ms)[0m  [1m[34mSELECT  "dumpsters".* FROM "dumpsters" WHERE "dumpsters"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/dumpsters_controller.rb:67
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/dumpsters_controller.rb:44
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/dumpsters_controller.rb:44
+  [1m[36mDumpster Update (0.4ms)[0m  [1m[33mUPDATE "dumpsters" SET "user_id" = ?, "updated_at" = ? WHERE "dumpsters"."id" = ?[0m  [["user_id", 2], ["updated_at", "2019-06-10 05:41:21.327618"], ["id", 2]]
+  ↳ app/controllers/dumpsters_controller.rb:44
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/dumpsters_controller.rb:44
+Redirected to http://localhost:3000/dumpsters/2
+Completed 302 Found in 9ms (ActiveRecord: 2.2ms)
+
+
+Started GET "/dumpsters/2" for ::1 at 2019-06-10 01:41:21 -0400
+Processing by DumpstersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDumpster Load (0.3ms)[0m  [1m[34mSELECT  "dumpsters".* FROM "dumpsters" WHERE "dumpsters"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/dumpsters_controller.rb:67
+  Rendering dumpsters/show.html.erb within layouts/application
+  Rendered dumpsters/show.html.erb within layouts/application (0.8ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 69ms (Views: 64.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/dumpsters/2/edit" for ::1 at 2019-06-10 01:41:23 -0400
+Processing by DumpstersController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDumpster Load (0.5ms)[0m  [1m[34mSELECT  "dumpsters".* FROM "dumpsters" WHERE "dumpsters"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/dumpsters_controller.rb:67
+  Rendering dumpsters/edit.html.erb within layouts/application
+  Rendered dumpsters/_form.html.erb (2.5ms)
+  Rendered dumpsters/edit.html.erb within layouts/application (5.6ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 70ms (Views: 63.8ms | ActiveRecord: 0.6ms)
+
+
+Started PATCH "/dumpsters/2" for ::1 at 2019-06-10 01:41:25 -0400
+Processing by DumpstersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xuUL+qtRe2tVjljeWlKhEedJlhDSuI82Zpqmwr6UoXM/c1seYiPSu/xqDDIfqqb4xpIQKxsA/pfCuKJkohKwXw==", "dumpster"=>{"user_id"=>"2", "post_id"=>"123213"}, "commit"=>"Update Dumpster", "id"=>"2"}
+  [1m[36mDumpster Load (0.2ms)[0m  [1m[34mSELECT  "dumpsters".* FROM "dumpsters" WHERE "dumpsters"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/dumpsters_controller.rb:67
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/dumpsters_controller.rb:44
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/dumpsters_controller.rb:44
+  [1m[36mDumpster Update (0.7ms)[0m  [1m[33mUPDATE "dumpsters" SET "post_id" = ?, "updated_at" = ? WHERE "dumpsters"."id" = ?[0m  [["post_id", 123213], ["updated_at", "2019-06-10 05:41:25.813601"], ["id", 2]]
+  ↳ app/controllers/dumpsters_controller.rb:44
+  [1m[35m (5.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/dumpsters_controller.rb:44
+Redirected to http://localhost:3000/dumpsters/2
+Completed 302 Found in 13ms (ActiveRecord: 7.1ms)
+
+
+Started GET "/dumpsters/2" for ::1 at 2019-06-10 01:41:25 -0400
+Processing by DumpstersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDumpster Load (0.2ms)[0m  [1m[34mSELECT  "dumpsters".* FROM "dumpsters" WHERE "dumpsters"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/dumpsters_controller.rb:67
+  Rendering dumpsters/show.html.erb within layouts/application
+  Rendered dumpsters/show.html.erb within layouts/application (0.8ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 69ms (Views: 65.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/dumpsters/2" for ::1 at 2019-06-10 01:42:21 -0400
+Processing by DumpstersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDumpster Load (0.2ms)[0m  [1m[34mSELECT  "dumpsters".* FROM "dumpsters" WHERE "dumpsters"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/dumpsters_controller.rb:67
+  Rendering dumpsters/show.html.erb within layouts/application
+  Rendered dumpsters/show.html.erb within layouts/application (0.9ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 65ms (Views: 61.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/dumpsters/post/new" for ::1 at 2019-06-10 01:42:22 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/dumpsters/post/new"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/dumpsters/post/new" for ::1 at 2019-06-10 01:45:43 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/dumpsters/post/new"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/dumpsters/post" for ::1 at 2019-06-10 01:45:43 -0400
+Processing by DumpstersController#show as HTML
+  Parameters: {"id"=>"post"}
+  [1m[36mDumpster Load (0.3ms)[0m  [1m[34mSELECT  "dumpsters".* FROM "dumpsters" WHERE "dumpsters"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/dumpsters_controller.rb:67
+Completed 404 Not Found in 2ms (ActiveRecord: 0.3ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Dumpster with 'id'=post):
+  
+app/controllers/dumpsters_controller.rb:67:in `set_dumpster'
+Started GET "/dumpsters/post" for ::1 at 2019-06-10 01:45:46 -0400
+Processing by DumpstersController#show as HTML
+  Parameters: {"id"=>"post"}
+  [1m[36mDumpster Load (0.2ms)[0m  [1m[34mSELECT  "dumpsters".* FROM "dumpsters" WHERE "dumpsters"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/dumpsters_controller.rb:67
+Completed 404 Not Found in 2ms (ActiveRecord: 0.2ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Dumpster with 'id'=post):
+  
+app/controllers/dumpsters_controller.rb:67:in `set_dumpster'
+Started GET "/dumpsters/new" for ::1 at 2019-06-10 01:45:47 -0400
+Processing by DumpstersController#new as HTML
+  Rendering dumpsters/new.html.erb within layouts/application
+  Rendered dumpsters/_form.html.erb (4.1ms)
+  Rendered dumpsters/new.html.erb within layouts/application (16.8ms)
+Started GET "/dumpsters" for ::1 at 2019-06-10 01:45:47 -0400
+Started GET "/dumpsters" for ::1 at 2019-06-10 01:45:47 -0400
+Processing by DumpstersController#index as HTML
+Processing by DumpstersController#index as HTML
+  Rendering dumpsters/index.html.erb within layouts/application
+  [1m[36mDumpster Load (0.2ms)[0m  [1m[34mSELECT "dumpsters".* FROM "dumpsters"[0m
+  ↳ app/views/dumpsters/index.html.erb:15
+  Rendering dumpsters/index.html.erb within layouts/application
+  Rendered dumpsters/index.html.erb within layouts/application (3.2ms)
+  [1m[36mDumpster Load (0.2ms)[0m  [1m[34mSELECT "dumpsters".* FROM "dumpsters"[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  ↳ app/views/dumpsters/index.html.erb:15
+  Rendered dumpsters/index.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 305ms (Views: 296.2ms | ActiveRecord: 0.3ms)
+
+
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 203ms (Views: 178.9ms | ActiveRecord: 0.5ms)
+
+
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 215ms (Views: 193.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/posts/new" for ::1 at 2019-06-10 01:45:49 -0400
+  
+LoadError (Unable to autoload constant PostsController, expected /Users/jaimecontardo/Desktop/WEB/course-project-jcontardo-rcruz-1-2/app/controllers/posts_controller.rb to define it):
+  
+activesupport (5.2.3) lib/active_support/dependencies.rb:511:in `load_missing_constant'
+bootsnap (1.4.4) lib/bootsnap/load_path_cache/core_ext/active_support.rb:60:in `block in load_missing_constant'
+bootsnap (1.4.4) lib/bootsnap/load_path_cache/core_ext/active_support.rb:16:in `allow_bootsnap_retry'
+bootsnap (1.4.4) lib/bootsnap/load_path_cache/core_ext/active_support.rb:59:in `load_missing_constant'
+activesupport (5.2.3) lib/active_support/dependencies.rb:195:in `const_missing'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:283:in `const_get'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:283:in `block in constantize'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:281:in `each'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:281:in `inject'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:281:in `constantize'
+activesupport (5.2.3) lib/active_support/dependencies.rb:582:in `get'
+activesupport (5.2.3) lib/active_support/dependencies.rb:613:in `constantize'
+actionpack (5.2.3) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (5.2.3) lib/action_dispatch/http/parameters.rb:101:in `binary_params_for?'
+actionpack (5.2.3) lib/action_dispatch/http/parameters.rb:92:in `set_binary_encoding'
+actionpack (5.2.3) lib/action_dispatch/http/parameters.rb:69:in `path_parameters='
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:840:in `call'
+omniauth (1.9.0) lib/omniauth/strategy.rb:192:in `call!'
+omniauth (1.9.0) lib/omniauth/strategy.rb:169:in `call'
+omniauth (1.9.0) lib/omniauth/builder.rb:64:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (5.2.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/posts/new" for ::1 at 2019-06-10 01:48:06 -0400
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (108.6ms)
+  Rendered posts/new.html.erb within layouts/application (111.9ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 244ms (Views: 215.2ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/posts" for ::1 at 2019-06-10 01:48:33 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (4.2ms)
+Completed 500 Internal Server Error in 52ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    20:   </thead>
+    21: 
+    22:   <tbody>
+    23:     <% @posts.each do |post| %>
+    24:       <tr>
+    25:         <td><%= post.title %></td>
+    26:         <td><%= post.description %></td>
+  
+app/views/posts/index.html.erb:23:in `_app_views_posts_index_html_erb__855453963630869671_70145826918520'
+Started GET "/posts" for ::1 at 2019-06-10 01:50:47 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (4.6ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    20:   </thead>
+    21: 
+    22:   <tbody>
+    23:     <% @posts.each do |post| %>
+    24:       <tr>
+    25:         <td><%= post.title %></td>
+    26:         <td><%= post.description %></td>
+  
+app/views/posts/index.html.erb:23:in `_app_views_posts_index_html_erb__855453963630869671_70145794678540'
+Started GET "/posts" for ::1 at 2019-06-10 01:51:04 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (4.2ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    20:   </thead>
+    21: 
+    22:   <tbody>
+    23:     <% @posts.each do |post| %>
+    24:       <tr>
+    25:         <td><%= post.title %></td>
+    26:         <td><%= post.description %></td>
+  
+app/views/posts/index.html.erb:23:in `_app_views_posts_index_html_erb__855453963630869671_70145820261800'
+Started GET "/posts" for ::1 at 2019-06-10 01:51:07 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (6.0ms)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    20:   </thead>
+    21: 
+    22:   <tbody>
+    23:     <% @posts.each do |post| %>
+    24:       <tr>
+    25:         <td><%= post.title %></td>
+    26:         <td><%= post.description %></td>
+  
+app/views/posts/index.html.erb:23:in `_app_views_posts_index_html_erb__855453963630869671_70145839657220'
+Started GET "/" for ::1 at 2019-06-10 01:51:08 -0400
+Processing by DefaultController#index as HTML
+  Rendering default/index.html.erb within layouts/application
+  Rendered default/index.html.erb within layouts/application (0.6ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 123ms (Views: 66.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts/new" for ::1 at 2019-06-10 01:51:15 -0400
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (14.7ms)
+  Rendered posts/new.html.erb within layouts/application (361.5ms)
+Completed 500 Internal Server Error in 375ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `user_show' for #<#<Class:0x00007f983264d350>:0x00007f982d5b3ae8>
+Did you mean?  user_session):
+    2: 
+    3: <%= render 'form', post: @post %>
+    4: 
+    5: <%= link_to 'Back', user_show %>
+  
+app/views/posts/new.html.erb:5:in `_app_views_posts_new_html_erb___722816740671324514_70145786370140'
+Started GET "/posts/new" for ::1 at 2019-06-10 01:51:55 -0400
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (7.2ms)
+  Rendered posts/new.html.erb within layouts/application (9.8ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 75ms (Views: 71.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/new" for ::1 at 2019-06-10 01:51:59 -0400
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (6.6ms)
+  Rendered posts/new.html.erb within layouts/application (9.4ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 87ms (Views: 83.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts/new" for ::1 at 2019-06-10 01:52:01 -0400
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (7.1ms)
+  Rendered posts/new.html.erb within layouts/application (11.2ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 74ms (Views: 70.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/users/show" for ::1 at 2019-06-10 01:52:03 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/posts/users/show"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/posts/users/show" for ::1 at 2019-06-10 01:53:32 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/posts/users/show"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/posts" for ::1 at 2019-06-10 01:53:33 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (4.4ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    20:   </thead>
+    21: 
+    22:   <tbody>
+    23:     <% @posts.each do |post| %>
+    24:       <tr>
+    25:         <td><%= post.title %></td>
+    26:         <td><%= post.description %></td>
+  
+app/views/posts/index.html.erb:23:in `_app_views_posts_index_html_erb__855453963630869671_70145827560640'
+Started GET "/" for ::1 at 2019-06-10 01:53:34 -0400
+Processing by DefaultController#index as HTML
+Started GET "/users/show" for ::1 at 2019-06-10 01:53:34 -0400
+  Rendering default/index.html.erb within layouts/application
+  Rendered default/index.html.erb within layouts/application (0.4ms)
+Started GET "/" for ::1 at 2019-06-10 01:53:34 -0400
+Processing by DefaultController#index as HTML
+  Rendering default/index.html.erb within layouts/application
+  Rendered default/index.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 296ms (Views: 287.4ms | ActiveRecord: 0.5ms)
+
+
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 141ms (Views: 133.6ms | ActiveRecord: 0.4ms)
+
+
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"show"}
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered users/show.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 150ms (Views: 131.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users/show" for ::1 at 2019-06-10 01:53:38 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"show"}
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered users/show.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 79ms (Views: 75.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/new" for ::1 at 2019-06-10 01:53:40 -0400
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (6.7ms)
+  Rendered posts/new.html.erb within layouts/application (131.0ms)
+Completed 500 Internal Server Error in 143ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"users"}, missing required keys: [:id]):
+    2: 
+    3: <%= render 'form', post: @post %>
+    4: 
+    5: <%= link_to 'Back', user_path %>
+  
+app/views/posts/new.html.erb:5:in `_app_views_posts_new_html_erb___722816740671324514_70145840905220'
+Started GET "/users/show" for ::1 at 2019-06-10 01:55:22 -0400
+Started GET "/" for ::1 at 2019-06-10 01:55:22 -0400
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/jaimecontardo/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/jaimecontardo/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#show as HTML
+Processing by DefaultController#index as HTML
+  Parameters: {"id"=>"show"}
+  Rendering default/index.html.erb within layouts/application
+  Rendering users/show.html.erb within layouts/application
+  Rendered default/index.html.erb within layouts/application (23.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered users/show.html.erb within layouts/application (252.2ms)
+Completed 200 OK in 1075ms (Views: 1057.3ms | ActiveRecord: 0.9ms)
+
+
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+Completed 200 OK in 1089ms (Views: 1072.2ms | ActiveRecord: 0.8ms)
+
+
