@@ -10,7 +10,7 @@
 
 </head>
 <body>
-    <nav class="navbar navbar-default" style="background-color:#75b0ec;">
+    <nav class="navbar navbar-default" style="background-color:#75b0ec; color:#000">
       <div class="container-fluid">
         <div class="navbar-header">
           <a class="navbar-brand" href="#">SHREK SWAMP</a>
@@ -20,6 +20,12 @@
         </ul>
         <ul class="nav navbar-nav navbar-right">
           <% if !user_signed_in? %>
+            <li>
+              <%= link_to dumpsters_path do %>
+                <span class="glyphicon glyphicon-trash"></span>
+                Dumpster
+              <% end %>
+            </li>
             <li>
               <%= link_to new_user_registration_path do %>
                 <span class="glyphicon glyphicon-user"></span>
