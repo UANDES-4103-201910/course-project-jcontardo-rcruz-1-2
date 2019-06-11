@@ -24,6 +24,7 @@ class PostsTest < ApplicationSystemTestCase
     fill_in "Post type", with: @post.post_type
     fill_in "Title", with: @post.title
     fill_in "Topic", with: @post.topic
+    fill_in "User", with: @post.user_id
     click_on "Create Post"
 
     assert_text "Post was successfully created"
@@ -44,6 +45,7 @@ class PostsTest < ApplicationSystemTestCase
     fill_in "Post type", with: @post.post_type
     fill_in "Title", with: @post.title
     fill_in "Topic", with: @post.topic
+    fill_in "User", with: @post.user_id
     click_on "Update Post"
 
     assert_text "Post was successfully updated"

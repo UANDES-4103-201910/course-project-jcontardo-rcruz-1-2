@@ -10,66 +10,63 @@
 
 </head>
 <body>
-    <nav class="navbar navbar-default" style="background-color: #067900;">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="#" style="color: #fff;">SHREK SWAMP</a>
-        </div>
-        <% if user_signed_in? %>
-          <ul class="nav navbar-nav">
-            <li><%= link_to 'Home', home_show_url %></li>
-          </ul>
-        <% end %>
-        <ul class="nav navbar-nav navbar-right">
-          <% if !user_signed_in? %>
-            <li>
-              <%= link_to new_user_registration_path do %>
-                <span class="glyphicon glyphicon-user"></span>
-                Sign Up
-              <% end %>
-            </li>
-            <li>
-              <%= link_to new_user_session_path do %>
-                <span class="glyphicon glyphicon-log-in"></span>
-                Login
-              <% end %>
-            </li>
-          <% else %>
-            <li>
-              <%= link_to new_post_path do %>
-                <span class="glyphicon glyphicon-list-alt"></span>
-                New Post
-              <% end %>
-            </li>
-            <li>
-              <%= link_to dumpsters_path do %>
-                <span class="glyphicon glyphicon-trash"></span>
-                Dumpster
-              <% end %>
-            </li>
-            <li>
-              <%= link_to users_show_path do %>
-                <span class="glyphicon glyphicon-user"></span>
-                Profile
-              <% end %>
-            </li>
-            <li>
-              <%= link_to sessions_destroy_path, method: :delete, data: { confirm: 'Are you sure?'} do %>
-                <span class="glyphicon glyphicon-log-out"></span>
-                Logout
-              <% end %>
-            </li>
-          <% end %>
-        </ul>
-      </div>
-    </nav>
-    <div class="alert alert-info" id="ajax_notice" hidden>
+<nav class="navbar navbar-default" style="background-color: #067900;">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#" style="color: #fff;">SHREK SWAMP</a>
     </div>
-    <div class="container">
-      <%= yield %>
+
+    <ul class="nav navbar-nav navbar-left">
+      <% if user_signed_in? %>
+        <h5>Welcome , <%= current_user.email %></h5>
+      <% end %>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <% if user_signed_in? %>
+
+        <ul class="nav navbar-nav">
+          <li><%= link_to 'Home', root_path %></li>
+        </ul>
+
+        <li>
+          <%= link_to new_post_path do %>
+            <span class="glyphicon glyphicon-list-alt"></span>
+            New Post
+          <% end %>
+        </li>
+
+        <li>
+          <%= link_to dumpsters_path do %>
+            <span class="glyphicon glyphicon-trash"></span>
+            Dumpster
+          <% end %>
+        </li>
+
+        <li>
+          <%= link_to destroy_user_session_path, method: :delete do %>
+            <span class="glyphicon glyphicon-log-out"></span>
+            Log Out
+          <% end %>
+        </li>
+      <% end %>
+    </ul>
+
+    <ul class="nav navbar-nav navbar-right">
+      <% if !user_signed_in? %>
+        <li>
+          <%= link_to new_user_session_path do%>
+            <span class="glyphicon glyphicon-log-in"></span>
+            Sign In
+          <% end %>
+        </li>
+
+
+
+      <% end %>
+    </ul>
   </div>
+</nav>
+<%= yield %>
 </body>
-
-
 
 </html>

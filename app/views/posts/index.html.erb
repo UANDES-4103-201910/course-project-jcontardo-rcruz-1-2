@@ -1,45 +1,57 @@
-<p id="notice"><%= notice %></p>
 
 <h1>Posts</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Description</th>
-      <th>Author</th>
-      <th>Creation date</th>
-      <th>Location</th>
-      <th>Topic</th>
-      <th>Body</th>
-      <th>Attachments</th>
-      <th>Post type</th>
-      <th>Innapropriate status</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
 
-  <tbody>
-    <% @posts.each do |post| %>
-      <tr>
-        <td><%= post.title %></td>
-        <td><%= post.description %></td>
-        <td><%= post.author %></td>
-        <td><%= post.creation_date %></td>
-        <td><%= post.location %></td>
-        <td><%= post.topic %></td>
-        <td><%= post.body %></td>
-        <td><%= post.attachments %></td>
-        <td><%= post.post_type %></td>
-        <td><%= post.innapropriate_status %></td>
-        <td><%= link_to 'Show', post %></td>
-        <td><%= link_to 'Edit', edit_post_path(post) %></td>
-        <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
 
 <br>
+<br>
 
-<%= link_to 'New Post', new_post_path %>
+<% @posts.each do |post| %>
+
+
+  <div style="border: 1px solid black; background-color: #add8e6;">
+
+      <h3><% post.body %></h3>
+      <h3><% post.title %></h3>
+      <%= time_ago_in_words(post.created_at) %> ago by <%= post.user.email %>
+      <br>
+
+      <% if can? :update, post %>
+        <%= link_to 'Edit', edit_post_path(post) %>
+      <% end %>
+
+      <% if can? :update, post %>
+        <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?'} %>
+      <% end %>
+
+    <% if post.comments.any? %>
+
+      <h4> Comments</h4>
+
+      <%= render post.comments %>
+    <% end %>
+
+    <hr>
+    <p> Add Comment </p>
+    <%= form_for([post, post.comments.build]) do |f| %>
+      <%= f.text_area :body %>
+      <%= submit_tag "Add" %>
+    <% end %>
+  </div>
+
+  <br>
+  <br>
+<%end %>
+
+
+
+
+
+
+
+
+
+
+
+
+

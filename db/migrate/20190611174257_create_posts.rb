@@ -11,6 +11,7 @@ class CreatePosts < ActiveRecord::Migration[5.2]
       t.string :attachments
       t.string :post_type
       t.boolean :innapropriate_status
+      t.integer :user_id
 
       t.timestamps
     end

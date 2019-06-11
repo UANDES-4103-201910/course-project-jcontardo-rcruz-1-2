@@ -17,7 +17,7 @@ class PostsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create post" do
     assert_difference('Post.count') do
-      post posts_url, params: { post: { attachments: @post.attachments, author: @post.author, body: @post.body, creation_date: @post.creation_date, description: @post.description, innapropriate_status: @post.innapropriate_status, location: @post.location, post_type: @post.post_type, title: @post.title, topic: @post.topic } }
+      post posts_url, params: { post: { attachments: @post.attachments, author: @post.author, body: @post.body, creation_date: @post.creation_date, description: @post.description, innapropriate_status: @post.innapropriate_status, location: @post.location, post_type: @post.post_type, title: @post.title, topic: @post.topic, user_id: @post.user_id } }
     end
 
     assert_redirected_to post_url(Post.last)
@@ -34,7 +34,7 @@ class PostsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update post" do
-    patch post_url(@post), params: { post: { attachments: @post.attachments, author: @post.author, body: @post.body, creation_date: @post.creation_date, description: @post.description, innapropriate_status: @post.innapropriate_status, location: @post.location, post_type: @post.post_type, title: @post.title, topic: @post.topic } }
+    patch post_url(@post), params: { post: { attachments: @post.attachments, author: @post.author, body: @post.body, creation_date: @post.creation_date, description: @post.description, innapropriate_status: @post.innapropriate_status, location: @post.location, post_type: @post.post_type, title: @post.title, topic: @post.topic, user_id: @post.user_id } }
     assert_redirected_to post_url(@post)
   end
 

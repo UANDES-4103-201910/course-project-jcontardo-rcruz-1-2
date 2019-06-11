@@ -4,22 +4,24 @@ one:
   title: MyString
   description: MyText
   author: MyString
-  creation_date: 2019-06-08
+  creation_date: 2019-06-11
   location: MyString
   topic: MyString
   body: MyText
   attachments: MyString
   post_type: MyString
   innapropriate_status: false
+  user_id: 1
 
 two:
   title: MyString
   description: MyText
   author: MyString
-  creation_date: 2019-06-08
+  creation_date: 2019-06-11
   location: MyString
   topic: MyString
   body: MyText
   attachments: MyString
   post_type: MyString
   innapropriate_status: false
+  user_id: 1

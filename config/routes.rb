@@ -1,27 +1,16 @@
 Rails.application.routes.draw do
-  get 'sessions/create'
-  get 'sessions/destroy'
-  get 'home/show'
-  get 'default/index'
-  get 'users/show'
-
-  resources :upvotes
-  resources :posts
-  resources :dumpsters
-  resources :downvotes
-  resources :comments
   resources :black_lists
-  
-  devise_for :users
-  root to: "default#index"
-
-  get 'auth/:provider/callback', to: 'sessions#create'
-  get 'auth/failure', to: redirect('/')
-  get 'signout', to: 'sessions#destroy', as: 'signout'
-
-  resources :sessions, only: [:create, :destroy , :edit]
-  resource :home, only: [:show]
-
+  resources :downvotes
+  resources :upvotes
+  resources :dumpsters
   root to: "home#show"
+
+  root 'home#show'
+  resources :home
+  resources :posts do
+    resources :comments
+  end
+
+  devise_for :users
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

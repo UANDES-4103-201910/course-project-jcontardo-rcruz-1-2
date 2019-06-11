@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_06_08_224609) do
+ActiveRecord::Schema.define(version: 2019_06_11_194942) do
 
   create_table "black_lists", force: :cascade do |t|
     t.integer "user_id"
@@ -52,11 +52,6 @@ ActiveRecord::Schema.define(version: 2019_06_08_224609) do
     t.string "attachments"
     t.string "post_type"
     t.boolean "innapropriate_status"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "profiles", force: :cascade do |t|
     t.integer "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -70,13 +65,9 @@ ActiveRecord::Schema.define(version: 2019_06_08_224609) do
   end
 
   create_table "users", force: :cascade do |t|
+    t.boolean "admin"
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
-    t.string "name"
-    t.integer "phone_number"
-    t.string "address"
-    t.string "user_type"
-    t.string "location"
     t.string "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"
@@ -87,6 +78,11 @@ ActiveRecord::Schema.define(version: 2019_06_08_224609) do
     t.string "last_sign_in_ip"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "name"
+    t.string "location"
+    t.integer "phone_number"
+    t.string "address"
+    t.string "user_type"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
