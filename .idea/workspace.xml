@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="df066107-47bc-448c-974e-a6d8248b52b1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/course-project-jcontardo-rcruz-1-2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/course-project-jcontardo-rcruz-1-2.iml" afterDir="false" />
-    </list>
+    <list default="true" id="df066107-47bc-448c-974e-a6d8248b52b1" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
     <ignored path="$PROJECT_DIR$/log/" />

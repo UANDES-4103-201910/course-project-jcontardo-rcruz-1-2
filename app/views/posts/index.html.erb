@@ -7,36 +7,38 @@
 <br>
 
 <% @posts.each do |post| %>
-
+  <h3><% post.user.name %></h3>
 
   <div style="border: 1px solid black; background-color: #add8e6;">
 
-      <h3><% post.body %></h3>
-      <h3><% post.title %></h3>
-      <%= time_ago_in_words(post.created_at) %> ago by <%= post.user.email %>
-      <br>
 
-      <% if can? :update, post %>
-        <%= link_to 'Edit', edit_post_path(post) %>
-      <% end %>
+              <h3><%= post.title %></h3>
+              <strong><%= time_ago_in_words(post.created_at) %> ago by <%= post.user.email %></strong>
 
-      <% if can? :update, post %>
-        <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?'} %>
-      <% end %>
+              <h5><%= post.body %></h5>
+              <br>
 
-    <% if post.comments.any? %>
+              <% if can? :update, post %>
+                <%= link_to 'Edit', edit_post_path(post) %>
+              <% end %>
 
-      <h4> Comments</h4>
+              <% if can? :update, post %>
+                <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?'} %>
+              <% end %>
 
-      <%= render post.comments %>
-    <% end %>
+            <% if post.comments.any? %>
 
-    <hr>
-    <p> Add Comment </p>
-    <%= form_for([post, post.comments.build]) do |f| %>
-      <%= f.text_area :body %>
-      <%= submit_tag "Add" %>
-    <% end %>
+              <h4> Comments</h4>
+
+              <%= render post.comments %>
+            <% end %>
+
+            <hr>
+            <strong> Add Comment </strong>
+            <%= form_for([post, post.comments.build]) do |f| %>
+              <%= f.text_area :body %>
+              <%= submit_tag "Add" %>
+            <% end %>
   </div>
 
   <br>
