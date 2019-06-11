@@ -15,9 +15,11 @@
         <div class="navbar-header">
           <a class="navbar-brand" href="#" style="color: #fff;">SHREK SWAMP</a>
         </div>
-        <ul class="nav navbar-nav">
-          <li><%= link_to 'Home', home_show_url %></li>
-        </ul>
+        <% if user_signed_in? %>
+          <ul class="nav navbar-nav">
+            <li><%= link_to 'Home', home_show_url %></li>
+          </ul>
+        <% end %>
         <ul class="nav navbar-nav navbar-right">
           <% if !user_signed_in? %>
             <li>
@@ -46,13 +48,13 @@
               <% end %>
             </li>
             <li>
-              <%= link_to "users/show" do %>
+              <%= link_to users_show_path do %>
                 <span class="glyphicon glyphicon-user"></span>
                 Profile
               <% end %>
             </li>
             <li>
-              <%= link_to destroy_user_session_path, method: :delete do %>
+              <%= link_to sessions_destroy_path, method: :delete, data: { confirm: 'Are you sure?'} do %>
                 <span class="glyphicon glyphicon-log-out"></span>
                 Logout
               <% end %>

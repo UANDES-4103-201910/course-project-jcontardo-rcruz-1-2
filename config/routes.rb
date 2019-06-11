@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   get 'sessions/destroy'
   get 'home/show'
   get 'default/index'
+  get 'users/show'
 
   resources :upvotes
   resources :posts
@@ -10,7 +11,6 @@ Rails.application.routes.draw do
   resources :downvotes
   resources :comments
   resources :black_lists
-  resources :users
   
   devise_for :users
   root to: "default#index"
@@ -19,7 +19,7 @@ Rails.application.routes.draw do
   get 'auth/failure', to: redirect('/')
   get 'signout', to: 'sessions#destroy', as: 'signout'
 
-  resources :sessions, only: [:create, :destroy]
+  resources :sessions, only: [:create, :destroy , :edit]
   resource :home, only: [:show]
 
   root to: "home#show"
