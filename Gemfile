@@ -65,6 +65,7 @@ gem 'cancan'
 gem 'bootstrap-sass'
 gem 'bootsnap', '>= 1.1.0', require: false
 gem 'omniauth-google-oauth2'
+gem 'geocoder'
 
 
 
