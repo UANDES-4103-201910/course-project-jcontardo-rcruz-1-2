@@ -31,7 +31,11 @@
         <li>
           <%= link_to root_path do %>
           <span class="glyphicon glyphicon-profile"></span>
-          <%= current_user.name %>
+            <% if current_user.name == nil %>
+              <%= current_user.email %>
+            <% else %>
+              <%= current_user.name %>
+            <% end %>
           <% end %>
         </li>
 
