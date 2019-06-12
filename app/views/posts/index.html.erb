@@ -13,7 +13,11 @@
 
 
               <h3><%= post.title %></h3>
-              <strong><%= time_ago_in_words(post.created_at) %> ago by <%= post.user.email %></strong>
+              <% if post.user.name == nil %>
+                <strong><%= time_ago_in_words(post.created_at) %> ago by <%= post.user.email %></strong>
+              <% else %>
+                <strong><%= time_ago_in_words(post.created_at) %> ago by <%= post.user.name %></strong>
+              <%end%>
 
               <h5><%= post.body %></h5>
               <br>

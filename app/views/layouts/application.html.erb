@@ -16,17 +16,24 @@
       <a class="navbar-brand" href="#" style="color: #fff;">SHREK SWAMP</a>
     </div>
 
-    <ul class="nav navbar-nav navbar-left">
-      <% if user_signed_in? %>
-        <h5>Welcome , <%= current_user.email %></h5>
-      <% end %>
-    </ul>
     <ul class="nav navbar-nav navbar-right">
       <% if user_signed_in? %>
 
         <ul class="nav navbar-nav">
-          <li><%= link_to 'Home', root_path %></li>
+          <li>
+            <%= link_to root_path do %>
+            <span class="glyphicon glyphicon-home"></span>
+            Home
+            <% end %>
+          </li>
         </ul>
+
+        <li>
+          <%= link_to root_path do %>
+          <span class="glyphicon glyphicon-profile"></span>
+          <%= current_user.name %>
+          <% end %>
+        </li>
 
         <li>
           <%= link_to new_post_path do %>
@@ -59,9 +66,12 @@
             Sign In
           <% end %>
         </li>
-
-
-
+        <li>
+          <%= link_to new_user_registration_path do %>
+            <span class="glyphicon glyphicon-user"></span>
+            Sign Up
+            <% end %>
+        </li>
       <% end %>
     </ul>
   </div>

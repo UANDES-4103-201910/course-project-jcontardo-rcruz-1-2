@@ -21,6 +21,9 @@
   <div class="actions">
     <%= f.submit "Log in" %>
   </div>
+  <div>
+    <td><%= link_to "Sign in with Google", user_google_oauth2_omniauth_authorize_path %></td>
+  </div>
 <% end %>
 
 <%= render "devise/shared/links" %>
