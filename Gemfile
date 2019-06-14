@@ -66,6 +66,9 @@ gem 'bootstrap-sass'
 gem 'bootsnap', '>= 1.1.0', require: false
 gem 'omniauth-google-oauth2'
 gem 'geocoder'
+gem 'bootstrap-generators'
+gem 'gmaps4rails'
+gem 'record_tag_helper', '~> 1.0'
 
 
 

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_06_11_194942) do
+ActiveRecord::Schema.define(version: 2019_06_14_001648) do
 
   create_table "black_lists", force: :cascade do |t|
     t.integer "user_id"
@@ -37,6 +37,15 @@ ActiveRecord::Schema.define(version: 2019_06_11_194942) do
   create_table "dumpsters", force: :cascade do |t|
     t.integer "user_id"
     t.integer "post_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "places", force: :cascade do |t|
+    t.string "name"
+    t.string "address"
+    t.float "latitude"
+    t.float "longitude"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

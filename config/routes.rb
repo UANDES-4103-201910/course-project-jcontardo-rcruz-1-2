@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :places
   resources :black_lists
   resources :downvotes
   resources :upvotes
