@@ -29,7 +29,7 @@
         </ul>
 
         <li>
-          <%= link_to root_path do %>
+          <%= link_to profiles_path do %>
           <span class="glyphicon glyphicon-profile"></span>
             <% if current_user.name == nil %>
               <%= current_user.email %>

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_06_14_001648) do
+ActiveRecord::Schema.define(version: 2019_06_14_015607) do
 
   create_table "black_lists", force: :cascade do |t|
     t.integer "user_id"
@@ -62,6 +62,11 @@ ActiveRecord::Schema.define(version: 2019_06_14_001648) do
     t.string "post_type"
     t.boolean "innapropriate_status"
     t.integer "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "profiles", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
