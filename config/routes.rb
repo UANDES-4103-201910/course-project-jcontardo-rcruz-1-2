@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   resources :downvotes
   resources :upvotes
   resources :dumpsters
+  resources :searches
   root to: "home#show"
 
   root 'home#show'

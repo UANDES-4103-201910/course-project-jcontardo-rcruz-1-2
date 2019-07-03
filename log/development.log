@@ -13819,3 +13819,688 @@ Completed 200 OK in 175ms (Views: 168.7ms | ActiveRecord: 0.3ms)
 Completed 200 OK in 195ms (Views: 190.0ms | ActiveRecord: 0.4ms)
 
 
+  [1m[35m (26.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateSearches (20190703225725)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20190703225725_create_searches.rb:3
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE TABLE "searches" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "keywords" varchar, "search_type" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20190703225725_create_searches.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190703225725"]]
+  ↳ bin/rails:9
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started GET "/" for ::1 at 2019-07-03 19:11:28 -0400
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/jaimecontardo/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#show as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:3
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 147ms (ActiveRecord: 1.9ms)
+
+
+Started GET "/posts" for ::1 at 2019-07-03 19:11:29 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (20.8ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:10
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:12
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:27
+  [1m[36mComment Exists (6.6ms)[0m  [1m[34mSELECT  1 AS one FROM "comments" WHERE "comments"."post_id" = ? LIMIT ?[0m  [["post_id", 4], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:35
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 4]]
+  ↳ app/views/posts/index.html.erb:39
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/models/ability.rb:21
+  Rendered collection of comments/_comment.html.erb [1 times] (4.4ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:12
+  [1m[36mComment Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "comments" WHERE "comments"."post_id" = ? LIMIT ?[0m  [["post_id", 5], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:35
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 5]]
+  ↳ app/views/posts/index.html.erb:39
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/models/ability.rb:21
+  Rendered collection of comments/_comment.html.erb [1 times] (1.3ms)
+  Rendered posts/index.html.erb within layouts/application (601.4ms)
+Completed 200 OK in 5489ms (Views: 5240.0ms | ActiveRecord: 31.3ms)
+
+
+Started GET "/posts" for ::1 at 2019-07-03 19:12:35 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (52.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:10
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:12
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:27
+  [1m[36mComment Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "comments" WHERE "comments"."post_id" = ? LIMIT ?[0m  [["post_id", 4], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:35
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 4]]
+  ↳ app/views/posts/index.html.erb:39
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/models/ability.rb:21
+  Rendered collection of comments/_comment.html.erb [1 times] (2.9ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:12
+  [1m[36mComment Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "comments" WHERE "comments"."post_id" = ? LIMIT ?[0m  [["post_id", 5], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:35
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 5]]
+  ↳ app/views/posts/index.html.erb:39
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/models/ability.rb:21
+  Rendered collection of comments/_comment.html.erb [1 times] (20.2ms)
+  Rendered posts/index.html.erb within layouts/application (430.4ms)
+Completed 200 OK in 2399ms (Views: 2325.2ms | ActiveRecord: 53.7ms)
+
+
+Started GET "/searches/new" for ::1 at 2019-07-03 19:12:39 -0400
+  
+SyntaxError (/Users/jaimecontardo/Desktop/WEB/course-project-jcontardo-rcruz-1-2/app/controllers/searches_controller.rb:20: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/searches_controller.rb:20: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/searches/new" for ::1 at 2019-07-03 19:13:01 -0400
+Processing by SearchesController#new as HTML
+Completed 406 Not Acceptable in 359ms (ActiveRecord: 0.7ms)
+
+
+  
+ActionController::UnknownFormat (SearchesController#new is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.2.3) lib/action_controller/metal/implicit_render.rb:55:in `default_render'
+actionpack (5.2.3) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (5.2.3) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (5.2.3) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (5.2.3) lib/abstract_controller/base.rb:194:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.2.3) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (5.2.3) lib/active_support/callbacks.rb:132:in `run_callbacks'
+actionpack (5.2.3) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.3) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.3) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.3) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.3) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.3) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+activerecord (5.2.3) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+actionpack (5.2.3) lib/abstract_controller/base.rb:134:in `process'
+actionview (5.2.3) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.3) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.3) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:840:in `call'
+omniauth (1.9.0) lib/omniauth/strategy.rb:192:in `call!'
+omniauth (1.9.0) lib/omniauth/strategy.rb:169:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (5.2.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/searches/new" for ::1 at 2019-07-03 19:23:53 -0400
+Processing by SearchesController#new as HTML
+  Rendering searches/new.html.erb within layouts/application
+  Rendered searches/new.html.erb within layouts/application (193.0ms)
+  [1m[36mUser Load (20.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:20
+Completed 200 OK in 1637ms (Views: 1523.6ms | ActiveRecord: 23.5ms)
+
+
+Started GET "/" for ::1 at 2019-07-03 19:24:06 -0400
+Processing by HomeController#show as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:3
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/posts" for ::1 at 2019-07-03 19:24:06 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (50.8ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:10
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:12
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:27
+  [1m[36mComment Exists (10.1ms)[0m  [1m[34mSELECT  1 AS one FROM "comments" WHERE "comments"."post_id" = ? LIMIT ?[0m  [["post_id", 4], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:35
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 4]]
+  ↳ app/views/posts/index.html.erb:39
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/models/ability.rb:21
+  Rendered collection of comments/_comment.html.erb [1 times] (4.8ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:12
+  [1m[36mComment Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "comments" WHERE "comments"."post_id" = ? LIMIT ?[0m  [["post_id", 5], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:35
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 5]]
+  ↳ app/views/posts/index.html.erb:39
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/models/ability.rb:21
+  Rendered collection of comments/_comment.html.erb [1 times] (2.3ms)
+  Rendered posts/index.html.erb within layouts/application (146.2ms)
+Completed 200 OK in 1529ms (Views: 1416.6ms | ActiveRecord: 65.7ms)
+
+
+Started GET "/searches/new" for ::1 at 2019-07-03 19:24:08 -0400
+Processing by SearchesController#new as HTML
+  Rendering searches/new.html.erb within layouts/application
+  Rendered searches/new.html.erb within layouts/application (1.7ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:20
+Completed 200 OK in 121ms (Views: 111.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/searches/new" for ::1 at 2019-07-03 19:34:39 -0400
+Processing by SearchesController#new as HTML
+  Rendering searches/new.html.erb within layouts/application
+  Rendered searches/new.html.erb within layouts/application (7.1ms)
+  [1m[36mUser Load (34.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:20
+Completed 200 OK in 1734ms (Views: 1565.4ms | ActiveRecord: 36.7ms)
+
+
+Started GET "/searches/new" for ::1 at 2019-07-03 19:34:48 -0400
+Processing by SearchesController#new as HTML
+  Rendering searches/new.html.erb within layouts/application
+  Rendered searches/new.html.erb within layouts/application (2.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:20
+Completed 200 OK in 100ms (Views: 96.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/searches/new" for ::1 at 2019-07-03 19:34:51 -0400
+Processing by SearchesController#new as HTML
+  Rendering searches/new.html.erb within layouts/application
+  Rendered searches/new.html.erb within layouts/application (2.2ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:20
+Completed 200 OK in 127ms (Views: 123.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/searches/new" for ::1 at 2019-07-03 19:36:39 -0400
+Processing by SearchesController#new as HTML
+  Rendering searches/new.html.erb within layouts/application
+  Rendered searches/new.html.erb within layouts/application (461.3ms)
+Completed 500 Internal Server Error in 571ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `search' for #<#<Class:0x00007fa11bb39638>:0x00007fa11bcd8868>
+Did you mean?  @search):
+    1: <h1>Search</h1>
+    2: <%= form_with(model: search, local: true) do |s| %>
+    3: 	<div class="field">
+    4: 		<%= s.label :keywords%> <br />
+    5: 		<%= s.text_field :keywords %>
+  
+app/views/searches/new.html.erb:2:in `_app_views_searches_new_html_erb___3475274330817405048_70164966459920'
+Started GET "/searches/new" for ::1 at 2019-07-03 19:37:15 -0400
+Processing by SearchesController#new as HTML
+  Rendering searches/new.html.erb within layouts/application
+  Rendered searches/new.html.erb within layouts/application (4.8ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:20
+Completed 200 OK in 1632ms (Views: 1629.0ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/searches" for ::1 at 2019-07-03 19:37:23 -0400
+Processing by SearchesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vSuNHouM34fsyDMgIal56/JFsP7h/1V9QDRfPlSQEXPhMV7Fl1NU5wyfG7FywsQvT386TJgdhPoMjEODe8u5Ww==", "search"=>{"keywords"=>"Hola"}, "commit"=>"Search"}
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/searches_controller.rb:7
+  [1m[36mSearch Create (77.5ms)[0m  [1m[32mINSERT INTO "searches" ("keywords", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["keywords", "Hola"], ["created_at", "2019-07-03 23:37:23.586819"], ["updated_at", "2019-07-03 23:37:23.586819"]]
+  ↳ app/controllers/searches_controller.rb:7
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/searches_controller.rb:7
+Redirected to http://localhost:3000/searches/1
+Completed 302 Found in 84ms (ActiveRecord: 79.0ms)
+
+
+Started GET "/searches/1" for ::1 at 2019-07-03 19:37:23 -0400
+Processing by SearchesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSearch Load (0.3ms)[0m  [1m[34mSELECT  "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/searches_controller.rb:12
+  Rendering searches/show.html.erb within layouts/application
+  Rendered searches/show.html.erb within layouts/application (1.6ms)
+Completed 500 Internal Server Error in 130ms (ActiveRecord: 0.3ms)
+
+
+  
+SyntaxError (/Users/jaimecontardo/Desktop/WEB/course-project-jcontardo-rcruz-1-2/app/views/searches/show.html.erb:67: syntax error, unexpected end-of-input, expecting keyword_end
+          end
+             ^):
+  
+app/views/searches/show.html.erb:67: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/searches/1" for ::1 at 2019-07-03 19:38:11 -0400
+Processing by SearchesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSearch Load (0.2ms)[0m  [1m[34mSELECT  "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/searches_controller.rb:12
+  Rendering searches/show.html.erb within layouts/application
+  Rendered searches/show.html.erb within layouts/application (1.2ms)
+Completed 500 Internal Server Error in 299ms (ActiveRecord: 0.2ms)
+
+
+  
+SyntaxError (/Users/jaimecontardo/Desktop/WEB/course-project-jcontardo-rcruz-1-2/app/views/searches/show.html.erb:66: syntax error, unexpected keyword_ensure, expecting keyword_end
+          ensure
+          ^~~~~~
+/Users/jaimecontardo/Desktop/WEB/course-project-jcontardo-rcruz-1-2/app/views/searches/show.html.erb:68: syntax error, unexpected end-of-input, expecting keyword_end
+          end
+             ^):
+  
+app/views/searches/show.html.erb:66: syntax error, unexpected keyword_ensure, expecting keyword_end
+app/views/searches/show.html.erb:68: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/searches/1" for ::1 at 2019-07-03 19:38:53 -0400
+Processing by SearchesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSearch Load (0.2ms)[0m  [1m[34mSELECT  "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/searches_controller.rb:12
+  Rendering searches/show.html.erb within layouts/application
+  Rendered searches/show.html.erb within layouts/application (309.9ms)
+Completed 500 Internal Server Error in 557ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (uninitialized constant Search::Posts):
+    1: <h1>Search Result</h1>
+    2: <p> <%= link_to 'Back', root_path %> </p>
+    3: 
+    4: <% if @search.search_posts.empty %>
+    5: 	<p> No post founded <p>
+    6: <% else %>
+    7: 	<% @search.search_posts.each do |p| %>
+  
+app/models/search.rb:3:in `search_posts'
+app/views/searches/show.html.erb:4:in `_app_views_searches_show_html_erb__1495952038909635570_70164991023420'
+Started GET "/searches/1" for ::1 at 2019-07-03 19:39:12 -0400
+Processing by SearchesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSearch Load (0.3ms)[0m  [1m[34mSELECT  "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/searches_controller.rb:12
+  Rendering searches/show.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE (title LIKE '%Hola%') AND (description LIKE '%Hola%') AND (body LIKE '%Hola%') LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /Users/jaimecontardo/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendered searches/show.html.erb within layouts/application (15.5ms)
+Completed 500 Internal Server Error in 48ms (ActiveRecord: 2.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `empty' for #<ActiveRecord::Relation []>
+Did you mean?  empty?):
+    1: <h1>Search Result</h1>
+    2: <p> <%= link_to 'Back', root_path %> </p>
+    3: 
+    4: <% if @search.search_posts.empty %>
+    5: 	<p> No post founded <p>
+    6: <% else %>
+    7: 	<% @search.search_posts.each do |p| %>
+  
+app/views/searches/show.html.erb:4:in `_app_views_searches_show_html_erb__1495952038909635570_70164966544020'
+Started GET "/searches/1" for ::1 at 2019-07-03 19:39:33 -0400
+Processing by SearchesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSearch Load (0.3ms)[0m  [1m[34mSELECT  "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/searches_controller.rb:12
+  Rendering searches/show.html.erb within layouts/application
+  [1m[36mPost Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "posts" WHERE (title LIKE '%Hola%') AND (description LIKE '%Hola%') AND (body LIKE '%Hola%') LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/searches/show.html.erb:4
+  Rendered searches/show.html.erb within layouts/application (2.2ms)
+  [1m[36mUser Load (13.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:20
+Completed 200 OK in 1283ms (Views: 1264.0ms | ActiveRecord: 15.3ms)
+
+
+Started GET "/" for ::1 at 2019-07-03 19:39:41 -0400
+Processing by HomeController#show as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:3
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/posts" for ::1 at 2019-07-03 19:39:41 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:10
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:12
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:27
+  [1m[36mComment Exists (11.8ms)[0m  [1m[34mSELECT  1 AS one FROM "comments" WHERE "comments"."post_id" = ? LIMIT ?[0m  [["post_id", 4], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:35
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 4]]
+  ↳ app/views/posts/index.html.erb:39
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/models/ability.rb:21
+  Rendered collection of comments/_comment.html.erb [1 times] (4.8ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:12
+  [1m[36mComment Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "comments" WHERE "comments"."post_id" = ? LIMIT ?[0m  [["post_id", 5], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:35
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 5]]
+  ↳ app/views/posts/index.html.erb:39
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/models/ability.rb:21
+  Rendered collection of comments/_comment.html.erb [1 times] (1.5ms)
+  Rendered posts/index.html.erb within layouts/application (72.9ms)
+Completed 200 OK in 1012ms (Views: 948.8ms | ActiveRecord: 14.9ms)
+
+
+Started GET "/searches/new" for ::1 at 2019-07-03 19:39:45 -0400
+Processing by SearchesController#new as HTML
+  Rendering searches/new.html.erb within layouts/application
+  Rendered searches/new.html.erb within layouts/application (3.0ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:20
+Completed 200 OK in 193ms (Views: 125.4ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/searches" for ::1 at 2019-07-03 19:39:48 -0400
+Processing by SearchesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1GAOJoiUHa8aoL45X+TV4xrwd6BJ6GAT0usoWC9MxyuBFnqK8Qk5yuQn8tTLWE5ADzzqtYY0/RNIB5Fp163gcA==", "search"=>{"keywords"=>"Nuevo"}, "commit"=>"Search"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/searches_controller.rb:7
+  [1m[36mSearch Create (0.5ms)[0m  [1m[32mINSERT INTO "searches" ("keywords", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["keywords", "Nuevo"], ["created_at", "2019-07-03 23:39:48.851535"], ["updated_at", "2019-07-03 23:39:48.851535"]]
+  ↳ app/controllers/searches_controller.rb:7
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/searches_controller.rb:7
+Redirected to http://localhost:3000/searches/2
+Completed 302 Found in 6ms (ActiveRecord: 2.1ms)
+
+
+Started GET "/searches/2" for ::1 at 2019-07-03 19:39:48 -0400
+Processing by SearchesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mSearch Load (0.4ms)[0m  [1m[34mSELECT  "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/searches_controller.rb:12
+  Rendering searches/show.html.erb within layouts/application
+  [1m[36mPost Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "posts" WHERE (title LIKE '%Nuevo%') AND (description LIKE '%Nuevo%') AND (body LIKE '%Nuevo%') LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/searches/show.html.erb:4
+  Rendered searches/show.html.erb within layouts/application (3.0ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:20
+Completed 200 OK in 133ms (Views: 128.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/searches/new" for ::1 at 2019-07-03 19:39:51 -0400
+Processing by SearchesController#new as HTML
+  Rendering searches/new.html.erb within layouts/application
+  Rendered searches/new.html.erb within layouts/application (2.3ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:20
+Completed 200 OK in 111ms (Views: 106.5ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/searches" for ::1 at 2019-07-03 19:39:56 -0400
+Processing by SearchesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JeVvdqR7yJ6IeT7CyVe6chaEob68drTkGhhKaR8zCoRwkxva3ebs+3b+ci9d6yHRA0g8q3OqKeSA9PNY59It3w==", "search"=>{"keywords"=>"Nuevo Post"}, "commit"=>"Search"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/searches_controller.rb:7
+  [1m[36mSearch Create (0.6ms)[0m  [1m[32mINSERT INTO "searches" ("keywords", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["keywords", "Nuevo Post"], ["created_at", "2019-07-03 23:39:56.893144"], ["updated_at", "2019-07-03 23:39:56.893144"]]
+  ↳ app/controllers/searches_controller.rb:7
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/searches_controller.rb:7
+Redirected to http://localhost:3000/searches/3
+Completed 302 Found in 6ms (ActiveRecord: 2.2ms)
+
+
+Started GET "/searches/3" for ::1 at 2019-07-03 19:39:56 -0400
+Processing by SearchesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mSearch Load (0.2ms)[0m  [1m[34mSELECT  "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/searches_controller.rb:12
+  Rendering searches/show.html.erb within layouts/application
+  [1m[36mPost Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "posts" WHERE (title LIKE '%Nuevo Post%') AND (description LIKE '%Nuevo Post%') AND (body LIKE '%Nuevo Post%') LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/searches/show.html.erb:4
+  Rendered searches/show.html.erb within layouts/application (4.2ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:20
+Completed 200 OK in 107ms (Views: 99.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2019-07-03 19:39:58 -0400
+Processing by HomeController#show as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:3
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/posts" for ::1 at 2019-07-03 19:39:58 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:10
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:12
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:27
+  [1m[36mComment Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "comments" WHERE "comments"."post_id" = ? LIMIT ?[0m  [["post_id", 4], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:35
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 4]]
+  ↳ app/views/posts/index.html.erb:39
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/models/ability.rb:21
+  Rendered collection of comments/_comment.html.erb [1 times] (2.1ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:12
+  [1m[36mComment Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "comments" WHERE "comments"."post_id" = ? LIMIT ?[0m  [["post_id", 5], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:35
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 5]]
+  ↳ app/views/posts/index.html.erb:39
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/models/ability.rb:21
+  Rendered collection of comments/_comment.html.erb [1 times] (1.9ms)
+  Rendered posts/index.html.erb within layouts/application (22.8ms)
+Completed 200 OK in 107ms (Views: 103.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/searches/new" for ::1 at 2019-07-03 19:40:10 -0400
+Processing by SearchesController#new as HTML
+  Rendering searches/new.html.erb within layouts/application
+  Rendered searches/new.html.erb within layouts/application (2.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:20
+Completed 200 OK in 82ms (Views: 77.9ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/searches" for ::1 at 2019-07-03 19:40:12 -0400
+Processing by SearchesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kWi7mMh7zX8k530wEGVxjVDnXPn4G6qTz+p7Ol0vJV7EHs80sebpGtpgMd2E2eouRSvB7DfHN5NVBsILpc4CBQ==", "search"=>{"keywords"=>"Mi Primer Post"}, "commit"=>"Search"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/searches_controller.rb:7
+  [1m[36mSearch Create (0.5ms)[0m  [1m[32mINSERT INTO "searches" ("keywords", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["keywords", "Mi Primer Post"], ["created_at", "2019-07-03 23:40:12.712989"], ["updated_at", "2019-07-03 23:40:12.712989"]]
+  ↳ app/controllers/searches_controller.rb:7
+  [1m[35m (11.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/searches_controller.rb:7
+Redirected to http://localhost:3000/searches/4
+Completed 302 Found in 16ms (ActiveRecord: 12.3ms)
+
+
+Started GET "/searches/4" for ::1 at 2019-07-03 19:40:12 -0400
+Processing by SearchesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mSearch Load (0.2ms)[0m  [1m[34mSELECT  "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/searches_controller.rb:12
+  Rendering searches/show.html.erb within layouts/application
+  [1m[36mPost Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "posts" WHERE (title LIKE '%Mi Primer Post%') AND (description LIKE '%Mi Primer Post%') AND (body LIKE '%Mi Primer Post%') LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/searches/show.html.erb:4
+  Rendered searches/show.html.erb within layouts/application (2.8ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:20
+Completed 200 OK in 109ms (Views: 105.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2019-07-03 19:41:13 -0400
+Processing by HomeController#show as HTML
+  [1m[36mUser Load (19.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:3
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 55ms (ActiveRecord: 20.5ms)
+
+
+Started GET "/posts" for ::1 at 2019-07-03 19:41:13 -0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:10
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:12
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:27
+  [1m[36mComment Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "comments" WHERE "comments"."post_id" = ? LIMIT ?[0m  [["post_id", 4], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:35
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 4]]
+  ↳ app/views/posts/index.html.erb:39
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/models/ability.rb:21
+  Rendered collection of comments/_comment.html.erb [1 times] (3.8ms)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:12
+  [1m[36mComment Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "comments" WHERE "comments"."post_id" = ? LIMIT ?[0m  [["post_id", 5], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:35
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 5]]
+  ↳ app/views/posts/index.html.erb:39
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/models/ability.rb:21
+  Rendered collection of comments/_comment.html.erb [1 times] (1.2ms)
+  Rendered posts/index.html.erb within layouts/application (117.5ms)
+Completed 200 OK in 1492ms (Views: 1472.3ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/searches/new" for ::1 at 2019-07-03 19:41:16 -0400
+Processing by SearchesController#new as HTML
+  Rendering searches/new.html.erb within layouts/application
+  Rendered searches/new.html.erb within layouts/application (3.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:20
+Completed 200 OK in 221ms (Views: 96.7ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/searches" for ::1 at 2019-07-03 19:41:26 -0400
+Processing by SearchesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GcMmZE0ZsTg2BrnBPI0TM1QNqfm1g5OxaiYC0yeg20ZMtVLINISVXciB9SyoMYiQQcE07HpfDrHwyrvi30H8HQ==", "search"=>{"keywords"=>"Post"}, "commit"=>"Search"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/searches_controller.rb:7
+  [1m[36mSearch Create (0.6ms)[0m  [1m[32mINSERT INTO "searches" ("keywords", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["keywords", "Post"], ["created_at", "2019-07-03 23:41:26.539952"], ["updated_at", "2019-07-03 23:41:26.539952"]]
+  ↳ app/controllers/searches_controller.rb:7
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/searches_controller.rb:7
+Redirected to http://localhost:3000/searches/5
+Completed 302 Found in 6ms (ActiveRecord: 2.2ms)
+
+
+Started GET "/searches/5" for ::1 at 2019-07-03 19:41:26 -0400
+Processing by SearchesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mSearch Load (0.2ms)[0m  [1m[34mSELECT  "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/searches_controller.rb:12
+  Rendering searches/show.html.erb within layouts/application
+  [1m[36mPost Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "posts" WHERE (title LIKE '%Post%') LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/searches/show.html.erb:4
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE (title LIKE '%Post%')[0m
+  ↳ app/views/searches/show.html.erb:7
+  Rendered searches/show.html.erb within layouts/application (3.8ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:20
+Completed 200 OK in 152ms (Views: 93.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/searches/5" for ::1 at 2019-07-03 19:43:31 -0400
+Processing by SearchesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mSearch Load (0.3ms)[0m  [1m[34mSELECT  "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/searches_controller.rb:12
+  Rendering searches/show.html.erb within layouts/application
+  [1m[36mPost Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "posts" WHERE (title LIKE '%Post%') LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/searches/show.html.erb:5
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE (title LIKE '%Post%')[0m
+  ↳ app/views/searches/show.html.erb:8
+  Rendered searches/show.html.erb within layouts/application (5.2ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:20
+Completed 200 OK in 1458ms (Views: 1451.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/searches/5" for ::1 at 2019-07-03 19:44:46 -0400
+Processing by SearchesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mSearch Load (0.2ms)[0m  [1m[34mSELECT  "searches".* FROM "searches" WHERE "searches"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/searches_controller.rb:12
+  Rendering searches/show.html.erb within layouts/application
+  [1m[36mPost Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "posts" WHERE (title LIKE '%Post%') LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/views/searches/show.html.erb:4
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE (title LIKE '%Post%')[0m
+  ↳ app/views/searches/show.html.erb:7
+  Rendered searches/show.html.erb within layouts/application (3.6ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:20
+Completed 200 OK in 1460ms (Views: 1455.3ms | ActiveRecord: 0.9ms)
+
+

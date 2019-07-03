@@ -29,6 +29,13 @@
         </ul>
 
         <li>
+          <%= link_to new_search_path do %>
+          <span class="glyphicon glyphicon-search"></span>
+             Search
+          <% end %>
+        </li>
+
+        <li>
           <%= link_to profiles_path do %>
           <span class="glyphicon glyphicon-profile"></span>
             <% if current_user.name == nil %>

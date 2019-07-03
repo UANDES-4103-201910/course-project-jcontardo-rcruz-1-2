@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_06_14_015607) do
+ActiveRecord::Schema.define(version: 2019_07_03_225725) do
 
   create_table "black_lists", force: :cascade do |t|
     t.integer "user_id"
@@ -67,6 +67,13 @@ ActiveRecord::Schema.define(version: 2019_06_14_015607) do
   end
 
   create_table "profiles", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "searches", force: :cascade do |t|
+    t.string "keywords"
+    t.string "search_type"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
