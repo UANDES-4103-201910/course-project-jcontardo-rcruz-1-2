@@ -1,5 +1,6 @@
-
+<div class="container-fluid">
 <h1>Posts</h1>
+</div>
 
 <%= flash[:alert] %>
 
@@ -7,44 +8,45 @@
 <br>
 
 <% @posts.each do |post| %>
+  <div class="container">
   <h3><% post.user.name %></h3>
 
-  <div style="border: 1px solid black; background-color: #add8e6;">
+    <div style="border: 1px solid black; background-color: #add8e6;">
 
 
-              <h3><%= post.title %></h3>
-              <% if post.user.name == nil %>
-                <strong><%= time_ago_in_words(post.created_at) %> ago by <%= post.user.email %></strong>
-              <% else %>
-                <strong><%= time_ago_in_words(post.created_at) %> ago by <%= post.user.name %></strong>
-              <%end%>
+                <h3><%= post.title %></h3>
+                <% if post.user.name == nil %>
+                  <strong> Post Created at: <%= post.created_at %> by <%= post.user.email %></strong>
+                <% else %>
+                  <strong>Post Created at: <%= post.created_at %> by <%= post.user.name %></strong>
+                <%end%>
 
-              <h5><%= post.body %></h5>
-              <br>
+                <h5><%= post.body %></h5>
+                <br>
 
-              <% if can? :update, post %>
-                <%= link_to 'Edit', edit_post_path(post) %>
+                <% if can? :update, post %>
+                  <%= link_to 'Edit', edit_post_path(post) %>
+                <% end %>
+
+                <% if can? :update, post %>
+                  <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?'} %>
+                <% end %>
+
+              <% if post.comments.any? %>
+
+                <h4> Comments</h4>
+
+                <%= render post.comments %>
               <% end %>
 
-              <% if can? :update, post %>
-                <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?'} %>
+              <hr>
+              <strong> Add Comment </strong>
+              <%= form_for([post, post.comments.build]) do |f| %>
+                <%= f.text_area :body %>
+                <%= submit_tag "Add" %>
               <% end %>
-
-            <% if post.comments.any? %>
-
-              <h4> Comments</h4>
-
-              <%= render post.comments %>
-            <% end %>
-
-            <hr>
-            <strong> Add Comment </strong>
-            <%= form_for([post, post.comments.build]) do |f| %>
-              <%= f.text_area :body %>
-              <%= submit_tag "Add" %>
-            <% end %>
+    </div>
   </div>
-
   <br>
   <br>
 <%end %>

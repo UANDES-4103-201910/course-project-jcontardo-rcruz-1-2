@@ -10,63 +10,107 @@
       </ul>
     </div>
   <% end %>
+    <div class="container">
+    <div class="jumbotron container text-left">
+      <div class="field">
+        <div class=" row">
+          <div class="col-md-3">
+            <%= form.label :title %>
+          </div>
+          <div class="col-md-6">
+            <%= form.text_field :title , class: "form-control" %>
+          </div>
+        </div>
+      </div>
 
-  <div class="field">
-    <%= form.label :title %>
-    <%= form.text_field :title %>
-  </div>
+      <div class="field">
+        <div class=" row">
+          <div class="col-md-3">
+            <%= form.label :description %>
+          </div>
+          <div class="col-md-6">
+            <%= form.text_area :description , class: "form-control" %>
+          </div>
+        </div>
+      </div>
 
-  <div class="field">
-    <%= form.label :description %>
-    <%= form.text_area :description %>
-  </div>
+      <div class="field">
+        <div class=" row">
+          <div class="col-md-3">
+            <%= form.label :body %>
+          </div>
+          <div class="col-md-6">
+            <%= form.text_area :body , class: "form-control" %>
+          </div>
+        </div>
+      </div>
 
-  <div class="field">
-    <%= form.label :author %>
-    <%= form.text_field :author %>
-  </div>
+      <div class="field">
+        <div class=" row">
+          <div class="col-md-3">
+            <%= form.label :location %>
+          </div>
+          <div class="col-md-6">
+            <%= form.text_field :location , class: "form-control" %>
+          </div>
+        </div>
+      </div>
 
-  <div class="field">
-    <%= form.label :creation_date %>
-    <%= form.date_select :creation_date %>
-  </div>
+      <div class="field">
+        <div class=" row">
+          <div class="col-md-3">
+            <%= form.label :post_type %>
+          </div>
+          <div class="col-md-6">
+            <%= form.text_field :post_type , class: "form-control" %>
+          </div>
+        </div>
+      </div>
 
-  <div class="field">
-    <%= form.label :location %>
-    <%= form.text_field :location %>
-  </div>
+      <div class="field">
+        <div class=" row">
+          <div class="col-md-3">
+            <%= form.label :photo %>
+          </div>
+          <div class="col-md-6">
+            <%= form.file_field :photo  %>
+          </div>
+        </div>
+      </div>
 
-  <div class="field">
-    <%= form.label :topic %>
-    <%= form.text_field :topic %>
-  </div>
+      <div class="field">
+        <%= form.fields_for :locations do |loc| %>
+        <div class=" locations_fields">
+          <div class="fields">
+            <div class="row">
+              <div class="col-md-3">
+                <%= loc.label :address %>
+              </div>
+              <div class="col-md-6">
+                <%= loc.text_field :address , class: "form-control" %>
+              </div>
+            </div>
 
-  <div class="field">
-    <%= form.label :body %>
-    <%= form.text_area :body %>
-  </div>
+          </div>
+        </div>
+        <%end %>
+      </div>
 
-  <div class="field">
-    <%= form.label :attachments %>
-    <%= form.text_field :attachments %>
-  </div>
+      <div class="field">
+        <div class=" row">
+          <div class="col-md-3">
+            <%= form.label :file %>
+          </div>
+          <div class="col-md-6">
+            <%= form.file_field :file  %>
+          </div>
+        </div>
+      </div>
+    </div>
 
-  <div class="field">
-    <%= form.label :post_type %>
-    <%= form.text_field :post_type %>
-  </div>
-
-  <div class="field">
-    <%= form.label :innapropriate_status %>
-    <%= form.check_box :innapropriate_status %>
-  </div>
-
-  <div class="field">
-    <%= form.label :user_id %>
-    <%= form.number_field :user_id %>
-  </div>
-
-  <div class="actions">
-    <%= form.submit %>
+    <div class="actions">
+      <%= form.submit %>
+    </div>
   </div>
 <% end %>
+
